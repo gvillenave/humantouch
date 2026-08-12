@@ -1,0 +1,31 @@
+{
+  "name": "humantouch",
+  "owner": {
+    "name": "gvillenave",
+    "email": "ai@gabvil.com"
+  },
+  "metadata": {
+    "description": "Plugins that keep humans in the loop and doing the thinking.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "doc-coach",
+      "source": "./plugins/doc-coach",
+      "description": "Guides you through writing your own technical document instead of generating one for you. Covers design docs, RFCs, ADRs, runbooks, postmortems, specs, proposals, READMEs, and more.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "documentation",
+        "writing",
+        "coaching",
+        "design-docs",
+        "rfc"
+      ],
+      "category": "writing"
+    }
+  ]
+}
