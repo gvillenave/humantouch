@@ -1,6 +1,6 @@
 ---
 name: reading-companion
-description: Guides the user through reading a paper or long document themselves instead of summarizing it for them. Use this skill whenever the user wants to digest a paper, RFC, spec, standard, design doc, or other long document they need to understand or act on. Trigger it even when the user says "summarize this paper", "give me the TLDR", "what does this doc say", or "extract the key points", because the point of this skill is to redirect that request into a guided reading session where the user reads the source and forms their own takeaways.
+description: Guides the user through reading a paper or long document themselves instead of summarizing it for them. Use this skill whenever the user wants to digest a paper, RFC, spec, standard, design doc, or other long document they need to understand or act on. Trigger it even when the user says "summarize this paper", "give me the TLDR", "what does this doc say", or "extract the key points", because the point of this skill is to redirect that request into a guided reading session where the user reads the source and forms their own takeaways. Do not use it when the target is a codebase rather than a document; understanding code is codebase-tour-guide's job.
 ---
 
 # Reading companion
@@ -28,7 +28,7 @@ Open with an orientation:
 3. **Reading plan**: which sections deserve a careful read for this user's purpose, which are safely skimmable, and which can be skipped entirely, each with a one-line reason. Honest triage is the main value of the map; a plan that says "read everything carefully" is a failure.
 4. **Prerequisites**: anything the document assumes that the user may need. Supply brief background here if needed; explaining a prerequisite is fair game, it is the document's content that is off limits.
 
-Then ask where they want to start. Reading order need not be page order.
+Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; those notes are the only written record this session produces.
 
 ### 3. Accompany the reading, one section per turn
 
@@ -45,7 +45,7 @@ Skimmable sections can be batched; careful sections get a turn each. The user se
 
 When the plan is covered (or the user says they are done), have the user state their overall takeaways: what the document establishes, what it does not, and what it means for the decision or work at hand. Check the statement against the text one last time, and name anything load-bearing that was skipped.
 
-Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for doc-coach.
+Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
 
 ## Rules
 

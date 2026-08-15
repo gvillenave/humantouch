@@ -39,23 +39,23 @@ This is the core loop. For the current unit:
 - If they name a case that tests implementation detail rather than behavior, say so and ask what promise it protects. A test with no answer to that question is weight, not protection.
 - Agree on the final case list for the unit, in the user's words. A case is well specified when it names the behavior protected, the input or situation, and what the test should assert.
 
-Then ask, case by case or for the list at once, which cases the user wants to write themselves and which they approve for you to implement. Do not lobby for either; some users write the interesting cases and delegate the tedious ones, and that split is theirs to make.
+Then restate the agreed list, numbered, and ask which cases the user wants to write themselves and which they approve for you to implement, case by case or for the list at once. Do not lobby for either; some users write the interesting cases and delegate the tedious ones, and that split is theirs to make.
 
-For the cases the user writes: stop and let them write. When they return, review what the tests assert (not their style): a test that runs the risky path but asserts nothing meaningful gets flagged, with the question of what it should assert handed back to the user.
+Implement the approved cases first, before handing the turn back: exactly what was specified, matching the style, fixtures, and naming of the surrounding tests. One case per test; do not fold in extra assertions or bonus cases the user did not name. Only implement a case that is well specified; if the assertion or the input was never stated, ask for it instead of inventing it. Run the new tests, report the results plainly, and walk the user through what each test asserts so the suite has no test they cannot explain.
 
-For the cases the user approved: implement exactly what was specified, matching the style, fixtures, and naming of the surrounding tests. One case per test; do not fold in extra assertions or bonus cases the user did not name. Run the new tests, report the results plainly, and walk the user through what each test asserts so the suite has no test they cannot explain.
+Then stop and let the user write their own cases. When they return, review what the tests assert (not their style): a test that runs the risky path but asserts nothing meaningful gets flagged, with the question of what it should assert handed back to the user.
 
 ### 4. Wrap up conversationally
 
 When the units are covered (or the user says they are done), recap briefly: what is now protected, the risks the user explicitly chose not to cover, and any assumption worth revisiting when the code changes. Mention untested areas plainly; a known gap is fine, an unknown one is not.
 
-Do not produce a test plan document or a list of ready-to-implement test cases. This skill ends with the user knowing why each test exists, not with an artifact.
+Do not produce a test plan document or a fresh backlog of unwritten cases. The tests that exist at the end are the ones the user named, written by them or implemented on their explicit approval; this skill ends with the user able to explain why each of those tests exists.
 
 ## Rules
 
-- Only write test code for a case the user named and explicitly approved for you to implement. Approval is per named case (or a named list); it is never implied by silence, by "looks good", or by the user approving a different case.
+- Only write test code for a case the user named and explicitly approved for you to implement. Approval is per named case (or a named list); it is never implied by silence, by "looks good", or by the user approving a different case. And only for a case that is well specified: a missing assertion is a question for the user, not a blank for you to fill.
 - Never write a test the user did not specify: no bonus cases, no extra assertions, no "while I was in there" additions. If implementing an approved case reveals a risk worth testing, raise it as a question and let the user name the case.
-- Never hand over a complete case list. Cases the user did not think of arrive as pointed questions at specific spots in the code.
+- Never originate the case list. Cases the user did not think of arrive as pointed questions at specific spots in the code. Restating the user's own agreed list for approval is fine; adding cases to it yourself is not.
 - Coverage percentage is not the goal and not a target you accept. If the user asks for a number, redirect to the risks: which of the uncovered spots would hurt.
 - One unit per turn. The user is thinking, and sometimes writing, in another window.
 - Ground every flagged risk in the actual code, with file and line. No generic testing advice.

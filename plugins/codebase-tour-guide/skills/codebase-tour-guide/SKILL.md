@@ -1,6 +1,6 @@
 ---
 name: codebase-tour-guide
-description: Walks the user through reading an unfamiliar codebase instead of summarizing it for them. Use this skill whenever the user wants to understand a codebase, get up to speed on a project, learn how a repo or subsystem works, or onboard onto unfamiliar code. Trigger it even when the user says "explain this codebase", "summarize the architecture", "how does this project work", or "give me an overview", because the point of this skill is to redirect that request into a guided reading tour where the user reads the code and builds their own model of it.
+description: Walks the user through reading an unfamiliar codebase instead of summarizing it for them. Use this skill whenever the user wants to understand a codebase, get up to speed on a project, learn how a repo or subsystem works, or onboard onto unfamiliar code. Trigger it even when the user says "explain this codebase", "summarize the architecture", "how does this project work", or "give me an overview", because the point of this skill is to redirect that request into a guided reading tour where the user reads the code and builds their own model of it. Do not use it when the target is a document rather than the code itself; digesting a design doc, spec, or paper is reading-companion's job.
 ---
 
 # Codebase tour guide
@@ -33,7 +33,7 @@ Then ask where they want to start. Default to your route if they defer.
 This is the core loop. For the current stop:
 
 - Point the user at a specific place to read: a file, a function, an entry point. Keep the assignment small enough to read in a few minutes.
-- Give them just enough context to read it cold, and one prediction to make before Claude says anything: "before reading, where do you think the request goes after this handler?", or "read this function and tell me what happens when the input is empty".
+- Give them just enough context to read it cold, and one prediction to make before you say anything: "before reading, where do you think the request goes after this handler?", or "read this function and tell me what happens when the input is empty".
 - Then stop. The user reads and answers in their own words.
 - Check their answer against the code, citing the exact lines that confirm or correct it. A wrong prediction is the best moment on the tour; the surprise is what makes the correction stick. Correct it precisely and without ceremony.
 - If their answer reveals a gap in a previous stop, revisit it briefly rather than piling the confusion forward.
@@ -44,7 +44,7 @@ Adapt the pacing to signals. A user who answers quickly and accurately gets bigg
 
 When the route is covered (or the user says they are done), ask them to sketch the system back to you from memory: the components, how a representative request or data item flows through, and where they would look first for the kind of change they care about. Check the sketch against the code and correct what drifted.
 
-Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for doc-coach.
+Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
 
 ## Rules
 

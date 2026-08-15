@@ -43,7 +43,7 @@ Keep a running list of decisions made, each recorded in the user's own words alo
 
 When the load-bearing decisions are settled (or the user says they are done), recap briefly: the decisions in the user's words, the assumptions still unvalidated, and the accepted risks. Mention any decision that was deferred.
 
-Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for doc-coach, and the decision list from this session is its raw material.
+Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for the doc-coach plugin from this marketplace (if they have it installed), and the decision list from this session is its raw material.
 
 ## Rules
 
