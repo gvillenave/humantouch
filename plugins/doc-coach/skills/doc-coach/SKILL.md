@@ -1,6 +1,6 @@
 ---
 name: doc-coach
-description: Guides the user through writing their own technical document instead of generating one for them. Use this skill whenever the user wants to produce a technical document of any kind, including design docs, RFCs, ADRs, runbooks, postmortems, technical specs, PRDs, proposals, one-pagers, READMEs, or onboarding docs. Trigger it even when the user asks you to "write the doc", "draft a design doc", "document this system", or "create an RFC", because the point of this skill is to redirect that request into a guided writing session where the user authors the document themselves.
+description: Guides the user through writing their own technical document instead of generating one for them. Use this skill whenever the user wants to produce a technical document of any kind, including design docs, RFCs, ADRs, runbooks, postmortems, technical specs, PRDs, proposals (change proposals included), one-pagers, READMEs, or onboarding docs. Trigger it even when the user asks you to "write the doc", "draft a design doc", "document this system", or "create an RFC", because the point of this skill is to redirect that request into a guided writing session where the user authors the document themselves.
 ---
 
 # Doc coach
