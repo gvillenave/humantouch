@@ -44,6 +44,96 @@
         "review"
       ],
       "category": "code-review"
+    },
+    {
+      "name": "debug-coach",
+      "source": "./plugins/debug-coach",
+      "description": "Guides you through diagnosing and fixing a bug yourself instead of patching it for you. Gathers the evidence, poses ranked hypotheses, and walks the investigation one step at a time while you form the diagnosis and write the fix.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "debugging",
+        "troubleshooting",
+        "coaching",
+        "root-cause",
+        "bugfix"
+      ],
+      "category": "debugging"
+    },
+    {
+      "name": "design-sparring-partner",
+      "source": "./plugins/design-sparring-partner",
+      "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "architecture",
+        "system-design",
+        "trade-offs",
+        "coaching",
+        "decisions"
+      ],
+      "category": "architecture"
+    },
+    {
+      "name": "test-design-coach",
+      "source": "./plugins/test-design-coach",
+      "description": "Helps you decide what to test instead of generating a test suite for you. Maps the code's risk surface, asks what behavior you would protect and what input breaks it, and leaves the test cases and the test code to you.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "testing",
+        "test-design",
+        "coverage",
+        "coaching",
+        "edge-cases"
+      ],
+      "category": "testing"
+    },
+    {
+      "name": "codebase-tour-guide",
+      "source": "./plugins/codebase-tour-guide",
+      "description": "Walks you through reading an unfamiliar codebase instead of summarizing it for you. Presents a map, then guides you component by component while you read the code, predict what it does, and build your own working model.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "onboarding",
+        "code-reading",
+        "learning",
+        "coaching",
+        "codebase"
+      ],
+      "category": "onboarding"
+    },
+    {
+      "name": "reading-companion",
+      "source": "./plugins/reading-companion",
+      "description": "Guides you through reading a paper or long document instead of summarizing it for you. Maps the structure, tells you which sections carry the substance, and checks your takeaways against the text while you do the reading.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "reading",
+        "papers",
+        "rfc",
+        "comprehension",
+        "coaching"
+      ],
+      "category": "reading"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "debug-coach",
+  "description": "Guides you through diagnosing and fixing a bug yourself instead of patching it for you. Gathers the evidence, poses ranked hypotheses, and walks the investigation one step at a time while you form the diagnosis and write the fix.",
+  "version": "0.1.0",
+  "author": {
+    "name": "gvillenave",
+    "email": "ai@gabvil.com"
+  },
+  "keywords": [
+    "debugging",
+    "troubleshooting",
+    "coaching",
+    "root-cause",
+    "bugfix"
+  ]
+}
