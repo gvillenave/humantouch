@@ -1,0 +1,16 @@
+{
+  "name": "reading-companion",
+  "description": "Guides you through reading a paper or long document instead of summarizing it for you. Maps the structure, tells you which sections carry the substance, and checks your takeaways against the text while you do the reading.",
+  "version": "0.1.0",
+  "author": {
+    "name": "gvillenave",
+    "email": "ai@gabvil.com"
+  },
+  "keywords": [
+    "reading",
+    "papers",
+    "rfc",
+    "comprehension",
+    "coaching"
+  ]
+}
