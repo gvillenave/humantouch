@@ -13,7 +13,7 @@ Ask what the user needs the understanding for: making a specific change, taking 
 
 ## Step 2: Orient yourself silently
 
-Before saying anything substantive, explore the codebase: entry points, directory structure, build and configuration files, the major components and how they depend on each other, and where the goal-relevant paths run. Identify what is core and what is periphery.
+Before saying anything substantive, explore the code within the scope set in step 1: entry points, directory structure, build and configuration files, the major components and how they depend on each other, and where the goal-relevant paths run. When the tour is scoped to a subsystem, map that subsystem and its immediate neighbors rather than the whole repo. Identify what is core and what is periphery.
 
 This pass is for you. Do not narrate it, and do not turn what you learned into a summary for the user.
 

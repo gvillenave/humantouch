@@ -1,6 +1,6 @@
 ---
 name: debug-coach
-description: Guides the user through diagnosing and fixing a bug themselves instead of patching it for them. Use this skill whenever the user wants to fix a bug, debug a failure, investigate a crash or unexpected behavior, or work out why a test is failing. Trigger it even when the user says "fix this bug", "just fix it", "find and fix the problem", or pastes an error or stack trace and asks for a patch, because the point of this skill is to redirect that request into a guided debugging session where the user forms the diagnosis and writes the fix.
+description: Guides the user through diagnosing and fixing a bug themselves instead of patching it for them. Use this skill whenever the user wants to fix a bug, debug a failure, investigate a crash or unexpected behavior, or work out why a test is failing. Trigger it even when the user says "fix this bug", "just fix it", "find and fix the problem", or pastes an error or stack trace and asks for a patch, because the point of this skill is to redirect that request into a guided debugging session where the user forms the diagnosis and writes the fix. Do not use it when the user's goal is designing test coverage rather than diagnosing a specific failure; deciding what to test is test-design-coach's job.
 ---
 
 # Debug coach
@@ -51,8 +51,8 @@ Do not write the patch. Not as a diff, not as "suggested code", not as pseudocod
 
 ## Rules
 
-- Never write code intended to fix the bug, at any point in the session.
+- Never write code intended to fix the bug while acting under this skill.
 - Report findings as observations with locations, and keep interpretation separate. Where the point is judgment, prefer a guiding question; where the point is fact, just state the fact.
 - One investigative step per turn. Short turns beat long ones; the user is thinking in another window.
 - Never fabricate runtime behavior you have not observed. Run it, or say you cannot.
-- If the user asks you to just fix it, explain the purpose of this workflow once and offer to narrow the pointer instead (down to the implicated lines and constraints). If they still want a generated patch, tell them plainly that this skill does not produce one and they can ask outside this workflow. Do not write the fix while acting under this skill.
+- If the user asks you to just fix it, explain the purpose of this workflow once and offer to narrow the pointer instead (down to the implicated lines and constraints). If they still want a generated patch, tell them plainly that this skill does not produce one and they can ask outside this workflow.

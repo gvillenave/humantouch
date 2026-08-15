@@ -15,7 +15,7 @@ This skill makes the reading cheaper without replacing it. You read the document
 
 ### 1. Read the document silently
 
-Get the document (a file, a URL to fetch, pasted text) and read all of it before saying anything substantive. Build a private model: what the document claims or specifies, how the sections depend on each other, where the substance is concentrated, what background it assumes, and where a first-time reader will bog down. Also note what the user said they need it for; if they did not say, ask, because the purpose decides what is skimmable.
+Get the document (a file, a URL to fetch, pasted text) and read it before saying anything substantive. Read all of it when its length allows; for a long document with a narrow stated purpose, read the structure and the goal-relevant sections carefully and skim the rest, enough to triage honestly in step 2. Build a private model: what the document claims or specifies, how the sections depend on each other, where the substance is concentrated, what background it assumes, and where a first-time reader will bog down. Also note what the user said they need it for; if they did not say, ask, because the purpose decides what is skimmable.
 
 Do not narrate this pass, and do not let your model leak out as a preview of the content.
 
@@ -28,7 +28,7 @@ Open with an orientation:
 3. **Reading plan**: which sections deserve a careful read for this user's purpose, which are safely skimmable, and which can be skipped entirely, each with a one-line reason. Honest triage is the main value of the map; a plan that says "read everything carefully" is a failure.
 4. **Prerequisites**: anything the document assumes that the user may need. Supply brief background here if needed; explaining a prerequisite is fair game, it is the document's content that is off limits.
 
-Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; those notes are the only written record this session produces.
+Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
 
 ### 3. Accompany the reading, one section per turn
 

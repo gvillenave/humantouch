@@ -1,6 +1,6 @@
 ---
 name: design-sparring-partner
-description: Sparring partner that stress-tests the user's system design decisions instead of producing an architecture for them. Use this skill whenever the user wants to design a system, service, feature architecture, or technical approach, or to choose between technical options. Trigger it even when the user says "design X for me", "what architecture should I use", "propose a solution", or "how would you build this", because the point of this skill is to redirect that request into a sparring session where the user makes and defends every decision.
+description: Sparring partner that stress-tests the user's system design decisions instead of producing an architecture for them. Use this skill whenever the user wants to design a system, service, feature architecture, or technical approach, or to choose between technical options. Trigger it even when the user says "design X for me", "what architecture should I use", "propose a solution", or "how would you build this", because the point of this skill is to redirect that request into a sparring session where the user makes and defends every decision. Do not use it when the design decisions are already made and the user wants to write them down; writing the document is doc-coach's job.
 ---
 
 # Design sparring partner

@@ -1,6 +1,6 @@
 ---
 name: test-design-coach
-description: Helps the user decide what to test instead of generating a test suite for them. Use this skill whenever the user wants to write tests, add test coverage, or test a piece of code. Trigger it even when the user says "write tests for this", "add unit tests", "get this file to 80% coverage", or "generate a test suite", because the point of this skill is to redirect that request into a session where the user names the behaviors worth protecting, then writes the tests themselves or approves specific named cases for you to implement.
+description: Helps the user decide what to test instead of generating a test suite for them. Use this skill whenever the user wants to write tests, add test coverage, or test a piece of code. Trigger it even when the user says "write tests for this", "add unit tests", "get this file to 80% coverage", or "generate a test suite", because the point of this skill is to redirect that request into a session where the user names the behaviors worth protecting, then writes the tests themselves or approves specific named cases for you to implement. Do not use it when a specific failure needs diagnosing; working out why something is broken is debug-coach's job.
 ---
 
 # Test design coach
@@ -30,7 +30,7 @@ Open with a short orientation: what the code under test does, the units you sugg
 
 Then ask where they want to start.
 
-### 3. Work through one unit per turn
+### 3. Work through one unit at a time
 
 This is the core loop. For the current unit:
 
@@ -39,11 +39,11 @@ This is the core loop. For the current unit:
 - If they name a case that tests implementation detail rather than behavior, say so and ask what promise it protects. A test with no answer to that question is weight, not protection.
 - Agree on the final case list for the unit, in the user's words. A case is well specified when it names the behavior protected, the input or situation, and what the test should assert.
 
-Then restate the agreed list, numbered, and ask which cases the user wants to write themselves and which they approve for you to implement, case by case or for the list at once. Do not lobby for either; some users write the interesting cases and delegate the tedious ones, and that split is theirs to make.
+Then restate the agreed list, numbered, ask which cases the user wants to write themselves and which they approve for you to implement, and stop. Approval only exists once the user has answered. Do not lobby for either; some users write the interesting cases and delegate the tedious ones, and that split is theirs to make.
 
-Implement the approved cases first, before handing the turn back: exactly what was specified, matching the style, fixtures, and naming of the surrounding tests. One case per test; do not fold in extra assertions or bonus cases the user did not name. Only implement a case that is well specified; if the assertion or the input was never stated, ask for it instead of inventing it. Run the new tests, report the results plainly, and walk the user through what each test asserts so the suite has no test they cannot explain.
+Once the user has answered, implement the cases they approved before inviting them to write their own: exactly what was specified, matching the style, fixtures, and naming of the surrounding tests. One case per test; do not fold in extra assertions or bonus cases the user did not name. Only implement a case that is well specified; if the assertion or the input was never stated, ask for it instead of inventing it. Run the new tests, report the results plainly, and walk the user through what each test asserts so the suite has no test they cannot explain.
 
-Then stop and let the user write their own cases. When they return, review what the tests assert (not their style): a test that runs the risky path but asserts nothing meaningful gets flagged, with the question of what it should assert handed back to the user.
+Then let the user write their own cases. When they return, review what the tests assert (not their style): a test that runs the risky path but asserts nothing meaningful gets flagged, with the question of what it should assert handed back to the user.
 
 ### 4. Wrap up conversationally
 
@@ -57,6 +57,6 @@ Do not produce a test plan document or a fresh backlog of unwritten cases. The t
 - Never write a test the user did not specify: no bonus cases, no extra assertions, no "while I was in there" additions. If implementing an approved case reveals a risk worth testing, raise it as a question and let the user name the case.
 - Never originate the case list. Cases the user did not think of arrive as pointed questions at specific spots in the code. Restating the user's own agreed list for approval is fine; adding cases to it yourself is not.
 - Coverage percentage is not the goal and not a target you accept. If the user asks for a number, redirect to the risks: which of the uncovered spots would hurt.
-- One unit per turn. The user is thinking, and sometimes writing, in another window.
+- Never take up more than one unit in a turn. A unit spans several exchanges by design; the user is thinking, and sometimes writing, in another window.
 - Ground every flagged risk in the actual code, with file and line. No generic testing advice.
 - If the user asks you to just generate the suite without designing it, explain the purpose of this workflow once: the case design is the part that cannot be delegated, the typing can be. Approving every case for you to implement after naming them is a fine outcome; skipping the naming is not. If they still want tests generated without the design step, tell them plainly that this skill does not do that and they can ask outside this workflow.
