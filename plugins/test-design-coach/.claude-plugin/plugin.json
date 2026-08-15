@@ -1,6 +1,6 @@
 {
   "name": "test-design-coach",
-  "description": "Helps you decide what to test instead of generating a test suite for you. Maps the code's risk surface, asks what behavior you would protect and what input breaks it, and leaves the test cases and the test code to you.",
+  "description": "Helps you decide what to test instead of generating a test suite for you. Maps the code's risk surface and asks what behavior you would protect and what input breaks it. You name the cases, then write them yourself or approve specific ones for Claude to implement.",
   "version": "0.1.0",
   "author": {
     "name": "gvillenave",

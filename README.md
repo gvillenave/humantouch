@@ -54,7 +54,7 @@ Triggers whenever you ask to design a system, choose an architecture, or weigh t
 
 Helps you decide what to test instead of generating a test suite for you.
 
-Generated tests assert what the code does, not what it should do, freezing bugs in place as passing tests. test-design-coach maps the code's risk surface, then asks you, unit by unit, what behavior you would protect and what input breaks it. You name the cases and write the tests; Claude points at the branches you missed as questions, never as code.
+Generated tests assert what the code does, not what it should do, freezing bugs in place as passing tests. test-design-coach maps the code's risk surface, then asks you, unit by unit, what behavior you would protect and what input breaks it. You name the cases, and Claude points at the branches you missed as questions. Once a case is specified in your words, you choose: write it yourself, or approve it for Claude to implement exactly as specified.
 
 Triggers whenever you ask to write tests, add coverage, or test a piece of code.
 
