@@ -1,6 +1,6 @@
 ---
 name: project-planning-coach
-description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, to plan or sequence implementation work, to turn a design doc, spec, or pile of tickets into an execution plan, or to organize a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "write me a project plan", "break this down", or "plan this migration", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design itself is still undecided; making those decisions is design-sparring-partner's job. Do not use it to write the plan up as a shareable document; that is doc-coach's job, and this skill's outline is its raw material.
+description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, plan or sequence implementation work, turn a design doc, spec, or pile of tickets into an execution plan, or draft a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "write me a project plan", or "break this down", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design is still undecided (that is design-sparring-partner's job) or to write the plan up as a shareable document (that is doc-coach's job, with this skill's outline as its raw material).
 ---
 
 # Project planning coach
@@ -23,7 +23,7 @@ Skim the sources first so your questions are informed, then confirm you know:
 
 Ask a few questions per turn, not a form. If a fact has to come from the user's head, ask for it now; never fabricate it later to fill a gap.
 
-If at any point — here or later — a load-bearing technical decision turns out to be unmade (the sources conflict on it, or the user says "we haven't decided"), name it and stop planning on top of it. Settling it is design-sparring-partner's job (from this marketplace, if installed); a plan built on an unmade decision inherits its collapse. Small decisions can instead become spikes or open questions in the outline.
+If at any point — here or later — a load-bearing technical decision turns out to be unmade (the sources conflict on it, or the user says "we haven't decided"), name it and stop planning on top of it. Settling it is design-sparring-partner's job (from this marketplace; it can be installed if the user doesn't have it); a plan built on an unmade decision inherits its collapse. Small decisions can instead become spikes or open questions in the outline.
 
 ### 2. Mine the sources
 
@@ -56,7 +56,7 @@ For the current milestone, propose a candidate split drawn only from the validat
 - Tickets with a hidden dependency on another ticket get flagged
 - Tickets too vague to start get flagged with what is missing, as a question
 
-A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. No estimates: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too murky to estimate, say that and why, and hand the question back.
+A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back.
 
 ### 5. Assemble the outline
 
@@ -77,9 +77,8 @@ The outline is working material, not a document for other humans. If the user ne
 ## Rules
 
 - Every work item traces to a source or to something the user said, with the pointer kept. Work the sources merely imply arrives as a question, never as a ticket you added.
-- Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing. Step 4's candidate ticket split is the one deliberate exception: it is starting material drawn from the inventory the user already validated, offered to be reshaped, and the final cut is always the user's.
-- Never attach estimates to tickets or milestones. Flag what is too big or too vague to estimate instead.
+- Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
 - One structural decision, or one milestone's tickets, per turn. The user is thinking, and often checking sources, between turns.
-- Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, or explicitly cut by the user.
+- Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
 - The outline contains only validated decisions. If the session ends early, the outline says what was never decided rather than papering over it.
 - If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow.

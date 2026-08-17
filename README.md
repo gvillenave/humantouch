@@ -66,14 +66,6 @@ A summary produces the feeling of understanding without the substance. codebase-
 
 Triggers whenever you ask to understand a codebase, get an overview of a project, or onboard onto unfamiliar code.
 
-### project-planning-coach
-
-Guides you through decomposing a coding project into an execution plan you own, instead of generating a plan for you.
-
-A generated plan invents plausible tickets no source asked for and omits real work — and both failures surface mid-execution, when they cost the most. project-planning-coach splits the labor: Claude mines your docs, tickets, and codebase for the actual work, dependencies, and unknowns, while you make every scoping, sequencing, and milestone decision. The result is an outline of steps, dependencies, milestones, and tickets you can defend — and the raw material for doc-coach when you need a shareable plan document.
-
-Triggers whenever you ask to break down a project, plan or sequence implementation work, create tickets from a design doc or spec, or draft a roadmap or milestones.
-
 ### reading-companion
 
 Guides you through reading a paper or long document instead of summarizing it for you.
@@ -81,3 +73,11 @@ Guides you through reading a paper or long document instead of summarizing it fo
 A summary silently drops what its author didn't think mattered, and you can't see what's missing. reading-companion reads the document first and clears the path: which sections carry the substance, which are skimmable, and what context makes the hard parts readable. You do the reading and report your takeaways; Claude checks them against the text.
 
 Triggers whenever you ask to digest, summarize, or extract key points from a paper, RFC, spec, or long document.
+
+### project-planning-coach
+
+Guides you through decomposing a coding project into an execution plan you own, instead of generating a plan for you.
+
+A generated plan invents plausible tickets no source asked for and omits real work — and both failures surface mid-execution, when they cost the most. project-planning-coach splits the labor: Claude mines your docs, tickets, and codebase for the actual work, dependencies, and unknowns, while you make every scoping, sequencing, and milestone decision. The result is an outline of steps, dependencies, milestones, and tickets you can defend — and the raw material for doc-coach when you need a shareable plan document.
+
+Triggers whenever you ask to break down a project, plan or sequence implementation work, create tickets from a design doc or spec, or draft a roadmap or milestones.
