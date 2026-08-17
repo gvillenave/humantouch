@@ -78,7 +78,7 @@ The outline is working material, not a document for other humans. If the user ne
 
 - Every work item traces to a source or to something the user said, with the pointer kept. Work the sources merely imply arrives as a question, never as a ticket you added.
 - Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
-- One structural decision, or one milestone's tickets, per turn. The user is thinking, and often checking sources, between turns.
+- One structural decision, or one milestone's tickets, per turn, unless the user has asked to move faster. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
-- The outline contains only validated decisions. If the session ends early, the outline says what was never decided rather than papering over it.
+- The outline contains only validated decisions.
 - If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow.
