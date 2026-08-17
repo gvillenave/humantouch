@@ -12,8 +12,8 @@
     {
       "name": "doc-coach",
       "source": "./plugins/doc-coach",
-      "description": "Guides you through writing your own technical document instead of generating one for you. Covers design docs, RFCs, ADRs, runbooks, postmortems, specs, PRDs, proposals (change proposals included), one-pagers, READMEs, and more.",
-      "version": "0.2.0",
+      "description": "Guides you through writing your own technical document instead of generating one for you. Covers design docs, RFCs, ADRs, runbooks, postmortems, specs, PRDs, proposals (change proposals included), one-pagers, project plans and briefs, READMEs, and more.",
+      "version": "0.3.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -67,7 +67,7 @@
       "name": "design-sparring-partner",
       "source": "./plugins/design-sparring-partner",
       "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -134,6 +134,24 @@
         "coaching"
       ],
       "category": "reading"
+    },
+    {
+      "name": "project-planning-coach",
+      "source": "./plugins/project-planning-coach",
+      "description": "Guides you through decomposing a coding project into an execution plan you own instead of generating a plan for you. Mines your docs, tickets, and codebase for the real work and dependencies while you make every scoping, sequencing, and milestone decision — ending with an outline of steps, milestones, and tickets, plus a handoff to doc-coach for the shareable writeup.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "planning",
+        "decomposition",
+        "milestones",
+        "tickets",
+        "coaching"
+      ],
+      "category": "planning"
     }
   ]
 }

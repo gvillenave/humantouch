@@ -110,3 +110,15 @@ Purpose: get a decision maker to approve direction and resources.
 - Cost and risk: what does this take and what could sink it?
 
 Failure mode: burying the ask. Decision makers read the first five lines; the ask goes there.
+
+## Project plan / brief
+
+Purpose: give stakeholders enough confidence in the shape of upcoming work to endorse it: what will be built, in what order, and what done means.
+
+- Goal and non-goals: what exists at the end, and what is explicitly not being done?
+- Milestones: what lands, in what order, and what does "done" mean for each?
+- Dependencies and sequencing rationale: why this order, and what blocks what?
+- Risks, unknowns, and spikes: what could move the plan, and what is being derisked first?
+- Deferred work: what was consciously pushed out, so it reads as a decision rather than an omission?
+
+Failure mode: pasting the ticket backlog into the document. Stakeholders need the shape of the work and the reasoning behind the order; ticket-level detail belongs in the tracker, linked rather than inlined.

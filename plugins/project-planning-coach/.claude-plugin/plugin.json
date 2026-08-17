@@ -1,0 +1,16 @@
+{
+  "name": "project-planning-coach",
+  "description": "Guides you through decomposing a coding project into an execution plan you own instead of generating a plan for you. Mines your docs, tickets, and codebase for the real work and dependencies while you make every scoping, sequencing, and milestone decision — ending with an outline of steps, milestones, and tickets, plus a handoff to doc-coach for the shareable writeup.",
+  "version": "0.1.0",
+  "author": {
+    "name": "gvillenave",
+    "email": "ai@gabvil.com"
+  },
+  "keywords": [
+    "planning",
+    "decomposition",
+    "milestones",
+    "tickets",
+    "coaching"
+  ]
+}
