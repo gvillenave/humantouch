@@ -77,7 +77,7 @@ The outline is working material, not a document for other humans. If the user ne
 ## Rules
 
 - Every work item traces to a source or to something the user said, with the pointer kept. Work the sources merely imply arrives as a question, never as a ticket you added.
-- Scope, sequencing, milestone boundaries, and ticket granularity are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing.
+- Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing. Step 4's candidate ticket split is the one deliberate exception: it is starting material drawn from the inventory the user already validated, offered to be reshaped, and the final cut is always the user's.
 - Never attach estimates to tickets or milestones. Flag what is too big or too vague to estimate instead.
 - One structural decision, or one milestone's tickets, per turn. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, or explicitly cut by the user.
