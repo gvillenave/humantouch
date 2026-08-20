@@ -84,9 +84,9 @@ Triggers whenever you ask to break down a project, plan or sequence implementati
 
 ### estimation-coach
 
-Guides you through estimating your own work instead of producing numbers for you.
+Guides you through estimating your own work instead of producing estimates for you.
 
-An AI-generated estimate is a confident number nobody can defend — and it anchors: once it's on screen, it becomes the plan. estimation-coach keeps the numbers yours: Claude maps what each ticket actually touches — hidden work, unknowns, evidence from comparable past changes, and how AI-assisted coding reshapes the effort — then you name every number and defend it against a concrete stress test. The result is an estimate sheet you can commit to, verified against your words and sources.
+An AI-generated estimate is a confident number nobody can defend — and it anchors: once it's on screen, it becomes the plan. estimation-coach keeps the numbers yours: Claude maps what each ticket actually touches — hidden work, unknowns, evidence from comparable past changes, and how AI-assisted coding reshapes the effort — then you name every estimate and defend it against a concrete stress test. The result is an estimate sheet you can commit to, verified against your words and sources.
 
 Triggers whenever you ask to estimate tickets or a project, size a backlog, assign story points, or judge whether a deadline is realistic.
 

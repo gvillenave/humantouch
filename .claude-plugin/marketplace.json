@@ -156,7 +156,7 @@
     {
       "name": "estimation-coach",
       "source": "./plugins/estimation-coach",
-      "description": "Guides you through estimating your own work instead of producing numbers for you. Maps what each ticket actually touches — hidden work, unknowns, and how AI-assisted coding reshapes the effort — then you name every number and defend it against concrete stress tests. Ends with an estimate sheet verified against your words and sources.",
+      "description": "Guides you through estimating your own work instead of producing estimates for you. Maps what each ticket actually touches — hidden work, unknowns, and how AI-assisted coding reshapes the effort — then you name every estimate and defend it against concrete stress tests. Ends with an estimate sheet verified against your words and sources.",
       "version": "0.1.0",
       "author": {
         "name": "gvillenave",

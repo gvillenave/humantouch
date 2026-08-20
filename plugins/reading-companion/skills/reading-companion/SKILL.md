@@ -21,7 +21,7 @@ Do not narrate this pass, and do not let your model leak out as a preview of the
 
 ### 2. Present the reading map
 
-Open with an orientation:
+Prepare an orientation:
 
 1. **What this document is**: one or two sentences on its genre and stance (a measurement paper, a normative spec, a position piece), not its conclusions.
 2. **Structure**: the sections, one line each, stating what each is for rather than what it says: "sets up the notation the proofs depend on", not "introduces X".
@@ -30,7 +30,7 @@ Open with an orientation:
 
 Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, the document's own structure swept for sections missing from the map entirely, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip — or a section the map never listed — is the costliest mistake this skill can make.
 
-Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
+Then present it and ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
 
 ### 3. Accompany the reading, one section per turn
 

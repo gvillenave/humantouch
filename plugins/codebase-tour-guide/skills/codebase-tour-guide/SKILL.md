@@ -19,7 +19,7 @@ This pass is for you. Do not narrate it, and do not turn what you learned into a
 
 ## Step 3: Present the map
 
-Open with an orientation the user can hold in their head:
+Prepare an orientation the user can hold in their head:
 
 1. **Shape**: 2-4 sentences on what the system is and how it is organized, at the level of a subway map, not a street map.
 2. **Components**: the major components relevant to the goal, one line each, with where each lives.
@@ -28,7 +28,7 @@ Open with an orientation the user can hold in their head:
 
 Before presenting the map, verify it against the code: each component's stated location and each landmark checked against the files themselves, and the goal-relevant paths swept for components the map missed, with anything resting on a file you never opened labeled as such rather than presented with the same confidence. The map steers the whole tour, and a wrong or missing stop early costs every stop after it.
 
-Then ask where they want to start. Default to your route if they defer.
+Then present it and ask where they want to start. Default to your route if they defer.
 
 ## Step 4: Guide one stop per turn
 

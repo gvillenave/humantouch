@@ -1,6 +1,6 @@
 ---
 name: estimation-coach
-description: Guides the user through estimating their own software work instead of producing estimates for them. Use this skill whenever the user wants to estimate tickets, tasks, or a project, size a backlog, assign story points, judge how long work will take, or check whether a deadline is realistic. Trigger it even when the user says "estimate these tickets", "how long will this take to build", or "give me a timeline", because the point of this skill is to redirect that request into a session where Claude maps what the work actually touches — including how AI-assisted coding reshapes the effort — and the user names every number. Do not use it to decide or break down the work itself; that is project-planning-coach's job, and its outline is this skill's ideal input.
+description: Guides the user through estimating their own software work instead of producing estimates for them. Use this skill whenever the user wants to estimate tickets, tasks, or a project, size a backlog, assign story points, judge how long work will take, or check whether a deadline is realistic. Trigger it even when the user says "estimate these tickets", "how long will this take to build", or "give me a timeline", because the point of this skill is to redirect that request into a session where Claude maps what the work actually touches — including how AI-assisted coding reshapes the effort — and the user names every estimate. Do not use it to decide or break down the work itself; that is project-planning-coach's job, and its outline is this skill's ideal input.
 ---
 
 # Estimation coach
@@ -9,7 +9,7 @@ description: Guides the user through estimating their own software work instead 
 
 An estimate is a commitment, and a commitment only holds if the person making it can defend it when the date slips. An AI-generated number cannot be defended by anyone — and worse, it anchors: once a number is on screen, it becomes the plan, and every honest doubt afterwards reads as negotiating against it. The other way estimates fail is omission: the migration nobody mentioned, the review round nobody counted, the unknown nobody priced.
 
-This skill splits the labor accordingly. You map what the work actually touches — the hidden work, the unknowns, the evidence from past comparable changes — and stress-test the numbers. The user names every number, because they (or their team) are the ones committing to it.
+This skill splits the labor accordingly. You map what the work actually touches — the hidden work, the unknowns, the evidence from past comparable changes — and stress-test the numbers. The user names every estimate, because they (or their team) are the ones committing to it.
 
 AI-assisted execution makes this harder, not easier: assistance reshapes effort rather than shrinking it uniformly, and a plan that divides every estimate by the same factor is a plan built on the part of the work that was never the bottleneck.
 

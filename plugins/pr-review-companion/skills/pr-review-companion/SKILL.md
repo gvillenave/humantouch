@@ -30,7 +30,7 @@ This pass is for you. Do not narrate it.
 
 ## Step 3: Present the map
 
-Open with a short orientation the user can hold in their head:
+Prepare a short orientation the user can hold in their head:
 
 1. **Scope**: 2-4 sentences on what the PR does and why, in your own words (not a paraphrase of the PR title).
 2. **Components**: a short list of the logical components you identified, one line each, with the files each one touches.
@@ -39,7 +39,7 @@ Open with a short orientation the user can hold in their head:
 
 Before presenting the map, verify it against the diff itself, both ways: every file a component lists exists in the diff's own file headers, and every file in those headers is assigned to some component — an exact, cheap coverage check in each direction. Anything you intend to flag is re-checked against the exact hunk it points to, and anything you could not confirm is labeled as such, not presented with the same confidence. Map errors compound — the user reviews in the order you set, trusting your framing.
 
-Then ask where they want to start. Default to your suggested order if they defer to you.
+Then present it and ask where they want to start. Default to your suggested order if they defer to you.
 
 ## Step 4: Walk through one component at a time
 
