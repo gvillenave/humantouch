@@ -68,7 +68,7 @@ When the milestones are cut (or the user says they have enough), assemble the ex
 - Open questions and agreed spikes
 - Deferred work and accepted risks, explicitly
 
-This draft may only contain what the user decided; assumptions stay marked as assumptions. It is not yet the deliverable: it goes through verification first.
+This draft contains only what the user decided, with assumptions marked as assumptions and anything never decided recorded as such rather than dropped. It is not yet the deliverable: it goes through verification first.
 
 ### 6. Verify before handing off
 
@@ -91,5 +91,5 @@ The outline is working material, not a document for other humans. If the user ne
 - Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
 - One structural decision, or one milestone's tickets, per turn, unless the user has asked to move faster. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
-- Everything in the outline is one of three things: a decision the user validated, a discrepancy marked unresolved, or — when verification was waved off — content labeled unverified, per step 6. Never present unresolved or unverified material as if it were checked.
+- Everything in the outline is one of four things: a decision the user validated, a discrepancy marked unresolved, an item recorded as never decided when the session ended early, or — when verification was waved off — content labeled unverified, per step 6. Never present unresolved, never-decided, or unverified material as if it were checked.
 - If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow.

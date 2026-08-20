@@ -28,7 +28,7 @@ Open with an orientation:
 3. **Reading plan**: which sections deserve a careful read for this user's purpose, which are safely skimmable, and which can be skipped entirely, each with a one-line reason. Honest triage is the main value of the map; a plan that says "read everything carefully" is a failure.
 4. **Prerequisites**: anything the document assumes that the user may need. Supply brief background here if needed; explaining a prerequisite is fair game, it is the document's content that is off limits.
 
-Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip is the costliest mistake this skill can make.
+Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, the document's own structure swept for sections missing from the map entirely, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip — or a section the map never listed — is the costliest mistake this skill can make.
 
 Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
 
@@ -53,7 +53,7 @@ Do not produce a summary, notes, or an annotated outline. The user's own notes, 
 
 - Never summarize the document's content, at any point. The map describes what sections are for; it does not carry their conclusions.
 - Never supply a corrected takeaway. Point at the passage and let the user extract it; understanding they fetched beats understanding they received.
-- Quote the text when checking takeaways. Claims about what the document says come with the words that say it.
+- Quote the text when confirming a takeaway; claims about what the document says come with the words that say it. When a takeaway misses, point at the passage without quoting the answer — the quote would be the corrected takeaway.
 - Triage honestly in the reading plan. Cutting the user's reading load to the sections that matter is the whole bargain for not getting a summary.
 - One careful section per turn. The user is reading in another window.
 - If the user asks for just the TLDR, explain the purpose of this workflow once and offer a tighter reading plan instead (the two or three passages that decide their question). If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow.

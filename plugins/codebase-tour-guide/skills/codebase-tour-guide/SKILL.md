@@ -26,7 +26,7 @@ Open with an orientation the user can hold in their head:
 3. **Route**: a suggested reading order with a one-line rationale. A good default is: the entry point, then the core domain logic, then the supporting machinery, with periphery skipped.
 4. **Landmarks worth knowing up front**: anything that will confuse a first-time reader if met cold, such as generated code, a naming convention, or a directory that lies about its contents.
 
-Before presenting the map, verify it against the code: each component's stated location and each landmark checked against the files themselves, with anything resting on a file you never opened labeled as such rather than presented with the same confidence. The map steers the whole tour, and a wrong stop early costs every stop after it.
+Before presenting the map, verify it against the code: each component's stated location and each landmark checked against the files themselves, and the goal-relevant paths swept for components the map missed, with anything resting on a file you never opened labeled as such rather than presented with the same confidence. The map steers the whole tour, and a wrong or missing stop early costs every stop after it.
 
 Then ask where they want to start. Default to your route if they defer.
 

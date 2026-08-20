@@ -37,7 +37,7 @@ Open with a short orientation the user can hold in their head:
 3. **Suggested order**: propose a review order with a one-line rationale. A good default is: core logic first, then things that depend on it, then tests and mechanical changes. If the components are independent, say so.
 4. **Anything unusual up front**: if the diff diverges from the stated intent, contains an unrelated change, or is missing something the description promises, mention it now. This shapes the whole review.
 
-Before presenting the map, verify it against the diff itself: every component's file list checked against the diff's own file headers (an exact, cheap coverage check that nothing in the diff is left outside the map), and anything you intend to flag re-checked against the exact hunk it points to. Anything you could not confirm is labeled as such, not presented with the same confidence. Map errors compound — the user reviews in the order you set, trusting your framing.
+Before presenting the map, verify it against the diff itself, both ways: every file a component lists exists in the diff's own file headers, and every file in those headers is assigned to some component — an exact, cheap coverage check in each direction. Anything you intend to flag is re-checked against the exact hunk it points to, and anything you could not confirm is labeled as such, not presented with the same confidence. Map errors compound — the user reviews in the order you set, trusting your framing.
 
 Then ask where they want to start. Default to your suggested order if they defer to you.
 

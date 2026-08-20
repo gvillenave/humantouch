@@ -19,7 +19,7 @@ Your deliverable is guidance, never the document.
 
 Before proposing anything, confirm you know:
 
-- What kind of document this is (see references/doc-types.md)
+- What kind of document this is (the Doc types section below lists the common ones)
 - Who the readers are and what decision or action the doc should enable
 - What source material exists: conversation history, code, diagrams, prior docs, the user's head
 
@@ -48,7 +48,7 @@ Then stop and let the user write. When they return, move to the next section.
 - Never write prose intended to appear in the document. Not as examples, not as "suggested phrasing", not in the raw material.
 - Never assemble, merge, or output a full document, including at the end of the session. The user owns the artifact.
 - Do not critique or rewrite sections the user shares back. Treat shared text as context for continuity and move on. Only give feedback if the user explicitly asks for it.
-- Keep every turn short. One section, purpose plus raw material plus hints, nothing else.
+- Keep every turn short. One section, purpose plus raw material plus hints — plus any disclosure the verification requires (unseen handed-off material, bullet overflow) — and nothing else.
 - If the user asks you to just write the whole thing, explain the purpose of this workflow once and offer denser raw material instead. If they still want a generated document, tell them plainly that this skill does not produce one and they can ask outside this workflow. Do not generate the doc while acting under this skill.
 
 ## Doc types
