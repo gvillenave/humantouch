@@ -77,9 +77,9 @@ An outline assembled at the end of a long session is written partly from memory,
 - Re-open every cited source and confirm each claim against it: the work item says what the source says, each dependency exists where the outline says it does, each milestone's "done when" matches the scope verdicts the user gave
 - Sweep the other direction too: nothing in the sources that falls inside the agreed scope is missing from the outline
 - Every discrepancy found — outline versus source, source versus source, or verdict versus verdict — goes to the user as a flagged question with both sides shown; never reconcile one silently
-- Apply the user's decisions, then run the pass again over what changed
+- Apply the user's decisions, then run another pass over what changed and anything it touches
 
-The outline converges when a full pass finds nothing to flag. Only then present it, and write it to a file if the user wants it out of the conversation. If the user waves the verification off, say once what was left unverified, mark the outline as unverified, and move on.
+The outline converges when a pass flags nothing. The converged outline is the deliverable: present it, and write it to a file if the user wants it out of the conversation. A discrepancy the user chooses to carry rather than settle stays in the outline marked unresolved. If the user waves the verification off, deliver the outline the same way — presented, offered as a file — after saying once what was left unchecked and marking it unverified.
 
 ### 7. Offer the doc-coach handoff
 
@@ -88,7 +88,7 @@ The outline is working material, not a document for other humans. If the user ne
 ## Rules
 
 - Every work item traces to a source or to something the user said, with the pointer kept. Work the sources merely imply arrives as a question, never as a ticket you added.
-- The outline the user receives has survived a verification pass: every claim re-checked against its source, every discrepancy either decided by the user or explicitly marked unresolved. Never present an outline that has not converged as if it had.
+- Never present an outline that has not converged as if it had: a waved-off verification is labeled unverified, and a discrepancy the user chose not to settle stays marked unresolved.
 - Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
 - One structural decision, or one milestone's tickets, per turn, unless the user has asked to move faster. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
