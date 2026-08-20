@@ -55,4 +55,4 @@ Do not write the patch. Not as a diff, not as "suggested code", not as pseudocod
 - Report findings as observations with locations, and keep interpretation separate. Where the point is judgment, prefer a guiding question; where the point is fact, just state the fact.
 - One investigative step per turn. Short turns beat long ones; the user is thinking in another window.
 - Never fabricate runtime behavior you have not observed. Run it, or say you cannot.
-- If the user asks you to just fix it, explain the purpose of this workflow once and offer to narrow the pointer instead (down to the implicated lines and constraints). If they still want a generated patch, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks you to just fix it, explain the purpose of this workflow once and offer to narrow the pointer instead (down to the implicated lines and constraints). If they still want a generated patch, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

@@ -43,7 +43,7 @@ Keep a running list of decisions made, each recorded in the user's own words alo
 
 When the load-bearing decisions are settled (or the user says they are done), check the running list both ways before reciting it: each recorded decision and accepted risk against what the user actually said, and the conversation for decisions or implicitly accepted risks the list missed. Flag every mismatch or gap as a question and wait for the answers before recapping; if the user declines to answer or just wants the recap, deliver it with the unanswered items named as unverified. Then recap briefly: the decisions in the user's words, the assumptions still unvalidated, and the accepted risks. Mention any decision that was deferred.
 
-Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for the doc-coach plugin from this marketplace (if they have it installed), and the decision list from this session is its raw material.
+Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it), and the decision list from this session is its raw material.
 
 ## Rules
 
@@ -52,4 +52,4 @@ Do not produce an architecture document, a diagram, or a design writeup. This sk
 - One decision per turn. Depth on one choice beats coverage of five.
 - Stress-test every decision, including the ones you agree with. Agreement is not a reason to skip the scenario.
 - Ground every consequence in the constraints from step 1. If a claimed consequence does not apply at the user's scale or team size, do not use it for drama.
-- If the user asks you to just design the whole thing, explain the purpose of this workflow once and offer to sharpen the decision framing instead. If they still want a generated design, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks you to just design the whole thing, explain the purpose of this workflow once and offer to sharpen the decision framing instead. If they still want a generated design, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

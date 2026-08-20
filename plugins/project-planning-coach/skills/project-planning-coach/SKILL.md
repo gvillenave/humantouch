@@ -1,6 +1,6 @@
 ---
 name: project-planning-coach
-description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, plan or sequence implementation work, turn a design doc, spec, or pile of tickets into an execution plan, or draft a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "write me a project plan", or "break this down", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design is still undecided (that is design-sparring-partner's job) or to write the plan up as a shareable document (that is doc-coach's job, with this skill's outline as its raw material).
+description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, plan or sequence implementation work, turn a design doc, spec, or pile of tickets into an execution plan, or draft a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "plan this project out", or "break this down", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design is still undecided (that is design-sparring-partner's job) or to write the plan up as a shareable document (that is doc-coach's job, with this skill's outline as its raw material).
 ---
 
 # Project planning coach
@@ -35,6 +35,8 @@ Read the sources and build a work inventory. Present it as findings, not as a pl
 - Conflicts between sources, stated plainly
 - Work the sources imply but never state — migrations, rollout, monitoring, test data — raised as questions ("the design changes the schema but nothing mentions a migration; is that in scope?"), never silently added as work items
 
+Before presenting the inventory, verify it: every pointer re-checked against its source so the item says what the source says. Steps 3 through 5 build every decision on this inventory, and an error cheap to fix here is expensive to unwind at step 6.
+
 Then stop and let the user react. They confirm, trim, and add; scope verdicts get recorded in their words. Do not proceed to structure until the inventory is theirs.
 
 ### 3. Shape the structure, one decision per turn
@@ -56,7 +58,7 @@ For the current milestone, propose a candidate split drawn only from the validat
 - Tickets with a hidden dependency on another ticket get flagged
 - Tickets too vague to start get flagged with what is missing, as a question
 
-A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back.
+A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back. When the user wants coaching on the numbers themselves, that is estimation-coach's job (from this marketplace; it can be installed if the user doesn't have it).
 
 ### 5. Assemble the outline
 
@@ -68,7 +70,7 @@ When the milestones are cut (or the user says they have enough), assemble the ex
 - Open questions and agreed spikes
 - Deferred work and accepted risks, explicitly
 
-This draft may only contain what the user decided; assumptions stay marked as assumptions. It is not yet the deliverable: it goes through verification first.
+This draft contains only what the user decided, with assumptions marked as assumptions and anything never decided recorded as such rather than dropped. It is not yet the deliverable: it goes through verification first.
 
 ### 6. Verify before handing off
 
@@ -83,7 +85,7 @@ The outline converges when a pass flags nothing new; a discrepancy the user has 
 
 ### 7. Offer the doc-coach handoff
 
-The outline is working material, not a document for other humans. If the user needs a shareable writeup — a project brief, a kickoff doc, a plan for stakeholder review — that is a job for the doc-coach plugin from this marketplace (if they have it installed; it can be installed from the humantouch marketplace otherwise). Offer the handoff once, and note that this outline is exactly the raw material doc-coach starts from: the user will write the document themselves, with the decisions already made.
+The outline is working material, not a document for other humans. If the user needs a shareable writeup — a project brief, a kickoff doc, a plan for stakeholder review — that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it). Offer the handoff once, and note that this outline is exactly the raw material doc-coach starts from: the user will write the document themselves, with the decisions already made.
 
 ## Rules
 
@@ -91,5 +93,5 @@ The outline is working material, not a document for other humans. If the user ne
 - Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
 - One structural decision, or one milestone's tickets, per turn, unless the user has asked to move faster. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
-- Everything in the outline is one of three things: a decision the user validated, a discrepancy marked unresolved, or — when verification was waved off — content labeled unverified, per step 6. Never present unresolved or unverified material as if it were checked.
-- If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- Everything in the outline is one of four things: a decision the user validated, a discrepancy marked unresolved, an item recorded as never decided when the session ended early, or — when verification was waved off — content labeled unverified, per step 6. Never present unresolved, never-decided, or unverified material as if it were checked.
+- If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

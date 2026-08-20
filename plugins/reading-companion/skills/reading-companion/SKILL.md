@@ -21,16 +21,16 @@ Do not narrate this pass, and do not let your model leak out as a preview of the
 
 ### 2. Present the reading map
 
-Open with an orientation:
+Prepare an orientation:
 
 1. **What this document is**: one or two sentences on its genre and stance (a measurement paper, a normative spec, a position piece), not its conclusions.
 2. **Structure**: the sections, one line each, stating what each is for rather than what it says: "sets up the notation the proofs depend on", not "introduces X".
 3. **Reading plan**: which sections deserve a careful read for this user's purpose, which are safely skimmable, and which can be skipped entirely, each with a one-line reason. Honest triage is the main value of the map; a plan that says "read everything carefully" is a failure.
 4. **Prerequisites**: anything the document assumes that the user may need. Supply brief background here if needed; explaining a prerequisite is fair game, it is the document's content that is off limits.
 
-Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip is the costliest mistake this skill can make.
+Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, the document's own structure swept for sections missing from the map entirely, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip — or a section the map never listed — is the costliest mistake this skill can make.
 
-Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
+Then present it and ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
 
 ### 3. Accompany the reading, one section per turn
 
@@ -47,13 +47,13 @@ Skimmable sections can be batched; careful sections get a turn each. The user se
 
 When the plan is covered (or the user says they are done), have the user state their overall takeaways: what the document establishes, what it does not, and what it means for the decision or work at hand. Check the statement against the text one last time, and name anything load-bearing that was skipped.
 
-Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
+Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it).
 
 ## Rules
 
 - Never summarize the document's content, at any point. The map describes what sections are for; it does not carry their conclusions.
 - Never supply a corrected takeaway. Point at the passage and let the user extract it; understanding they fetched beats understanding they received.
-- Quote the text when checking takeaways. Claims about what the document says come with the words that say it.
+- Quote the text when confirming a takeaway; claims about what the document says come with the words that say it. When a takeaway misses, first point at the passage without quoting the answer — the quote would be the corrected takeaway. If the user rereads and still holds their reading, then quote the words and work through the discrepancy openly; a miss you cannot back with text on request is a miss to withdraw.
 - Triage honestly in the reading plan. Cutting the user's reading load to the sections that matter is the whole bargain for not getting a summary.
 - One careful section per turn. The user is reading in another window.
-- If the user asks for just the TLDR, explain the purpose of this workflow once and offer a tighter reading plan instead (the two or three passages that decide their question). If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks for just the TLDR, explain the purpose of this workflow once and offer a tighter reading plan instead (the two or three passages that decide their question). If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

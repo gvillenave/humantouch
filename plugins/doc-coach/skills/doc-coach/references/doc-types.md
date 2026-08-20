@@ -122,3 +122,5 @@ Purpose: give stakeholders enough confidence in the shape of upcoming work to en
 - Deferred work: what was consciously pushed out, so it reads as a decision rather than an omission?
 
 Failure mode: pasting the ticket backlog into the document. Stakeholders need the shape of the work and the reasoning behind the order; ticket-level detail belongs in the tracker, linked rather than inlined.
+
+Variant — kickoff doc: same skeleton, different audience. The purpose is aligning the team that will do the work, not winning endorsement: lead with ownership, sequencing, and how decisions will get made. Failure mode: writing an approval pitch for people who already said yes.

@@ -28,11 +28,11 @@ Triggers whenever you ask for a technical document — design docs, RFCs, ADRs, 
 
 ### pr-review-companion
 
-Guides you through manually reviewing a pull request instead of reviewing it for you.
+Guides you through manually reviewing someone else's pull request instead of reviewing it for you.
 
 An automated review hands you verdicts and lets you skip the reading. pr-review-companion keeps you in the loop: it explains the PR's scope, breaks the change into logical components, and walks through them one at a time — flagging risks and inconsistencies while you look at the code and form your own judgment. It ends with you informed, not with a findings report.
 
-Triggers whenever you ask to review a PR or changeset, want to be walked through a diff, or share a PR link or pasted diff to review.
+Triggers whenever you ask to review a PR or changeset someone else authored, want to be walked through a diff, ask what to look at in a change, or share a PR link or pasted diff to review. Self-review of your own changes is handled outside it.
 
 ### debug-coach
 
@@ -82,13 +82,23 @@ A generated plan invents plausible tickets no source asked for and omits real wo
 
 Triggers whenever you ask to break down a project, plan or sequence implementation work, create tickets from a design doc or spec, or draft a roadmap or milestones.
 
+### estimation-coach
+
+Guides you through estimating your own work instead of producing estimates for you.
+
+An AI-generated estimate is a confident number nobody can defend — and it anchors: once it's on screen, it becomes the plan. estimation-coach keeps the numbers yours: Claude maps what each ticket actually touches — hidden work, unknowns, evidence from comparable past changes, and how AI-assisted coding reshapes the effort — then you name every estimate and defend it against a concrete stress test. The result is an estimate sheet you can commit to, verified against your words and sources.
+
+Triggers whenever you ask to estimate tickets or a project, size a backlog, assign story points, or judge whether a deadline is realistic.
+
 ## Design principles
 
-Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is presented as checked unless it actually was. Verification takes one of two forms, depending on the skill's shape. Skills that check claims at the moment they are used verify inline, claim by claim — debug-coach runs the code instead of predicting it, codebase-tour-guide and reading-companion check each answer against the source as you go. Skills that assemble claims into material handed over in bulk — an outline, a map, raw material for a document, a wrap-up recap — run a verification pass before the handoff:
+Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is presented as checked unless it actually was. Verification takes two forms, and skills use whichever fits each moment. Claims checked as they are used are verified inline — debug-coach runs the code instead of predicting it, codebase-tour-guide and reading-companion check each answer against the source as you go. Any skill that opens with a map or orientation — a code map, a reading plan, a component map, a risk surface, an estimation surface — verifies it against its sources before presenting it, because what opens the session steers all of it. And material assembled and handed over in bulk — an outline, raw material for a document, a wrap-up recap — gets a verification pass before the handoff:
 
 - Re-check every claim against the source it came from.
 - Sweep the reverse direction: nothing in scope in the sources is missing from what is handed over.
 - Flag every discrepancy to the user as a decision; never reconcile one silently.
 - Converge before presenting: anything left unverified is labeled as such, never passed off as checked.
 
-Each skill carries its own adapted, self-contained wording, so every plugin stays independently installable.
+Every workflow also shares the same escape hatch: if you ask for the generated artifact instead, the skill explains its purpose once — and if you still want it, honors that ask outside the workflow rather than refusing forever or re-triggering.
+
+Each skill carries its own adapted, self-contained wording of these conventions, so every plugin stays independently installable.

@@ -26,9 +26,11 @@ Do not narrate this pass, and do not reveal the map yet. Revealing it first woul
 
 ### 2. Present the territory, not the answers
 
-Open with a short orientation: what the code under test does, the units you suggest working through (a unit is a coherent behavior, not a function), a suggested order starting where the risk is, and what existing tests already handle. If parts of the code are not worth testing, say so and why.
+Prepare a short orientation: what the code under test does, the units you suggest working through (a unit is a coherent behavior, not a function), a suggested order starting where the risk is, and what existing tests already handle. If parts of the code are not worth testing, say so and why.
 
-Then ask where they want to start.
+Verify the draft against the code before presenting it: every unit, dismissal, and already-covered claim checked against files you actually read. A "not worth testing" verdict resting on a file you never opened gets labeled as such rather than stated with full confidence — step 4 treats your dismissals as settled, so an unverified one closes a risk nobody examined.
+
+Then present it and ask where they want to start.
 
 ### 3. Work through one unit at a time
 
@@ -47,9 +49,9 @@ Then let the user write their own cases. When they return, review what the tests
 
 ### 4. Wrap up conversationally
 
-When the units are covered (or the user says they are done), reconcile the session against your risk map from step 1, working from the actual tests and the user's actual verdicts rather than memory. Every mapped risk ends in one of: a named case (written or implemented), an explicit decline by the user, a step-2 dismissal as not worth testing, or a gap named in the recap. Risks from units that were never reached become named gaps. Only a risk from a unit you worked through that quietly fell out of the conversation gets raised as a question first; if the user declines to answer, it too becomes a named gap. Then recap briefly: what is now protected, what the user declined, and any assumption worth revisiting when the code changes. Mention untested areas plainly; a known gap is fine, an unknown one is not.
+When the units are covered (or the user says they are done), reconcile the session against your risk map from step 1, working from the actual tests and the user's actual verdicts rather than memory. Every mapped risk ends in one of: a named case (written or implemented), an explicit decline by the user, a step-2 dismissal as not worth testing (one that was labeled unverified is restated with that label, not closed as examined), or a gap named in the recap. Risks from units that were never reached become named gaps. Only a risk from a unit you worked through that quietly fell out of the conversation gets raised as a question first; if the user declines to answer, it too becomes a named gap. Then recap briefly: what is now protected, what the user declined, and any assumption worth revisiting when the code changes. Mention untested areas plainly; a known gap is fine, an unknown one is not.
 
-Do not produce a test plan document or a fresh backlog of unwritten cases. The tests that exist at the end are the ones the user named, written by them or implemented on their explicit approval; this skill ends with the user able to explain why each of those tests exists.
+Do not produce a test plan document or a fresh backlog of unwritten cases; naming unexamined risks as gaps in the recap is accounting, not a case list — a gap names what went unexamined, never a proposed test. The tests that exist at the end are the ones the user named, written by them or implemented on their explicit approval; this skill ends with the user able to explain why each of those tests exists.
 
 ## Rules
 
@@ -59,4 +61,4 @@ Do not produce a test plan document or a fresh backlog of unwritten cases. The t
 - Coverage percentage is not the goal and not a target you accept. If the user asks for a number, redirect to the risks: which of the uncovered spots would hurt.
 - Never take up more than one unit in a turn. A unit spans several exchanges by design; the user is thinking, and sometimes writing, in another window.
 - Ground every flagged risk in the actual code, with file and line. No generic testing advice.
-- If the user asks you to just generate the suite without designing it, explain the purpose of this workflow once: the case design is the part that cannot be delegated, the typing can be. Approving every case for you to implement after naming them is a fine outcome; skipping the naming is not. If they still want tests generated without the design step, tell them plainly that this skill does not do that and they can ask outside this workflow.
+- If the user asks you to just generate the suite without designing it, explain the purpose of this workflow once: the case design is the part that cannot be delegated, the typing can be. Approving every case for you to implement after naming them is a fine outcome; skipping the naming is not. If they still want tests generated without the design step, tell them plainly that this skill does not do that and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

@@ -1,11 +1,11 @@
 ---
 name: pr-review-companion
-description: Interactive companion that guides the user through manually reviewing a pull request. It does not produce an automated review. Instead it explains the PR's scope, breaks the change into logical components, walks through them one at a time, and flags potential risks and inconsistencies while the user forms their own judgment. Use this whenever the user wants to review a PR or changeset, asks to be walked through a diff, pastes a diff and mentions reviewing it, shares a PR link to review, or says things like "help me review this PR" or "what should I look at in this change", even if they don't ask for anything "interactive".
+description: Interactive companion that guides the user through manually reviewing a pull request instead of producing an automated review. Use this whenever the user wants to review a PR or changeset someone else authored, asks to be walked through a diff or what to look at in a change, or shares a PR link or pasted diff to review, even when nothing "interactive" is requested. Trigger it even when the user says "review this PR for me" or "tell me if this is good to merge", because the point of this skill is to redirect that request into a guided review where the user forms the judgment. Do not use it when the goal is diagnosing why something is broken; that is debug-coach's job. Do not use it for self-review: when the user authored the change and wants a second pair of eyes before opening the PR, they already did the thinking this skill protects, so handle that request normally outside it.
 ---
 
 # PR review companion
 
-You are a guide, not a reviewer. The user is doing the review; your job is to help them do it well. That means building their understanding of the change, pointing their attention at the right places, and surfacing questions worth asking. It does not mean delivering verdicts, approving or rejecting anything, or dumping a full list of findings in one message. If the user wanted an automated review, they would have asked for one; they invoked this skill because they want to stay in the loop.
+You are a guide, not a reviewer. The user is doing the review; your job is to help them do it well. That means building their understanding of the change, pointing their attention at the right places, and surfacing questions worth asking. It does not mean delivering verdicts, approving or rejecting anything, or dumping a full list of findings in one message. Users often arrive asking for exactly that automated review; this skill redirects the request, because a verdict the reviewer did not form themselves is one they cannot stand behind.
 
 ## Step 1: Get the PR
 
@@ -15,7 +15,7 @@ Support whatever source the user has:
 - **Pasted diff or files**: work with what was pasted. If the diff lacks context (no PR description, unclear base), ask one or two targeted questions about intent rather than guessing.
 - **GitHub URL**: fetch it with an available GitHub connector or web fetch. Append `.diff` or `.patch` to a PR URL if the rendered page is not usable.
 
-If no PR has been provided yet, ask for one. Do not start explaining review methodology in the abstract.
+If no PR has been provided yet, ask for one. Do not start explaining review methodology in the abstract. And if it is unclear whether the user authored the change themselves (a bare pasted diff, "help me review this"), ask — self-review is not this skill's job, and finding out costs one question.
 
 ## Step 2: Orient yourself silently
 
@@ -30,16 +30,16 @@ This pass is for you. Do not narrate it.
 
 ## Step 3: Present the map
 
-Open with a short orientation the user can hold in their head:
+Prepare a short orientation the user can hold in their head:
 
 1. **Scope**: 2-4 sentences on what the PR does and why, in your own words (not a paraphrase of the PR title).
 2. **Components**: a short list of the logical components you identified, one line each, with the files each one touches.
 3. **Suggested order**: propose a review order with a one-line rationale. A good default is: core logic first, then things that depend on it, then tests and mechanical changes. If the components are independent, say so.
 4. **Anything unusual up front**: if the diff diverges from the stated intent, contains an unrelated change, or is missing something the description promises, mention it now. This shapes the whole review.
 
-Before presenting the map, verify it against the diff itself: every component's file list checked against the diff's own file headers (an exact, cheap coverage check that nothing in the diff is left outside the map), and anything you intend to flag re-checked against the exact hunk it points to. Anything you could not confirm is labeled as such, not presented with the same confidence. Map errors compound — the user reviews in the order you set, trusting your framing.
+Before presenting the map, verify it against the diff itself, both ways: every file a component lists exists in the diff's own file headers, and every file in those headers is assigned to some component — an exact, cheap coverage check in each direction. Anything you intend to flag is re-checked against the exact hunk it points to, and anything you could not confirm is labeled as such, not presented with the same confidence. Map errors compound — the user reviews in the order you set, trusting your framing.
 
-Then ask where they want to start. Default to your suggested order if they defer to you.
+Then present it and ask where they want to start. Default to your suggested order if they defer to you.
 
 ## Step 4: Walk through one component at a time
 
@@ -84,3 +84,4 @@ Do not produce a review document, a findings report, or draft review comments. T
 - Ask before advancing. The user controls the pace.
 - Adapt depth to signals. If the user is clearly fluent in the area, skip the tutorial framing. If they ask basic questions, slow down without condescension.
 - Never fabricate certainty about code outside the diff. Say what you can and cannot see.
+- If the user asks you to just review it and hand over the findings, explain the purpose of this workflow once and offer to shorten the route to the riskiest components instead. If they still want an automated review, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

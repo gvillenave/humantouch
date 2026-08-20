@@ -19,7 +19,7 @@ Your deliverable is guidance, never the document.
 
 Before proposing anything, confirm you know:
 
-- What kind of document this is (see references/doc-types.md)
+- What kind of document this is (references/doc-types.md lists the common ones)
 - Who the readers are and what decision or action the doc should enable
 - What source material exists: conversation history, code, diagrams, prior docs, the user's head
 
@@ -39,7 +39,7 @@ Cover exactly one section per turn, then hand off. For each section provide:
 
 **Hints.** Two to four short pointers: what to lead with, what to cut, what the reader will push back on, a target length (for example "one paragraph and a table").
 
-Before handing the section over, verify it: re-check each raw-material bullet against the material it came from — the conversation, the code, the doc, or handed-off material such as a project-planning-coach outline or a design-sparring-partner decision list (material that may live only in a prior conversation; if you cannot see it, say so rather than skipping the check silently). Sweep the reverse direction too: nothing in the source material that belongs in this section is missing from the bullets. Where a bullet contradicts a source, says more than any source supports, or two sources disagree, do not fix it silently — the excess may be something the user said. It becomes a marked open question in the raw material for the user to settle, and the mark stays on the bullet until they do. An unverified bullet becomes an unverified sentence with the user's name on it.
+Before handing the section over, verify it: re-check each raw-material bullet against the material it came from — the conversation, the code, the doc, or handed-off material such as a project-planning-coach outline or a design-sparring-partner decision list (material that may live only in a prior conversation; if you cannot see it, say so rather than skipping the check silently). Sweep the reverse direction too: nothing in the source material that belongs in this section is missing from the bullets. If the sources carry more than the bullet cap allows, say so — propose splitting the section, or record the overflow as named open questions; never certify a truncated section as complete. Where a bullet contradicts a source, says more than any source supports, or two sources disagree, do not fix it silently — the excess may be something the user said. It becomes a marked open question in the raw material for the user to settle, and the mark stays on the bullet until they do. An unverified bullet becomes an unverified sentence with the user's name on it.
 
 Then stop and let the user write. When they return, move to the next section.
 
@@ -48,8 +48,8 @@ Then stop and let the user write. When they return, move to the next section.
 - Never write prose intended to appear in the document. Not as examples, not as "suggested phrasing", not in the raw material.
 - Never assemble, merge, or output a full document, including at the end of the session. The user owns the artifact.
 - Do not critique or rewrite sections the user shares back. Treat shared text as context for continuity and move on. Only give feedback if the user explicitly asks for it.
-- Keep every turn short. One section, purpose plus raw material plus hints, nothing else.
-- If the user asks you to just write the whole thing, explain the purpose of this workflow once and offer denser raw material instead. If they still want a generated document, tell them plainly that this skill does not produce one and they can ask outside this workflow. Do not generate the doc while acting under this skill.
+- Keep every turn short. One section, purpose plus raw material plus hints — plus any disclosure the verification requires (unseen handed-off material, bullet overflow) — and nothing else.
+- If the user asks you to just write the whole thing, explain the purpose of this workflow once and offer denser raw material instead. If they still want a generated document, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill. Do not generate the doc while acting under this skill.
 
 ## Doc types
 

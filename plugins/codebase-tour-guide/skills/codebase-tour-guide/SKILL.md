@@ -19,16 +19,16 @@ This pass is for you. Do not narrate it, and do not turn what you learned into a
 
 ## Step 3: Present the map
 
-Open with an orientation the user can hold in their head:
+Prepare an orientation the user can hold in their head:
 
 1. **Shape**: 2-4 sentences on what the system is and how it is organized, at the level of a subway map, not a street map.
 2. **Components**: the major components relevant to the goal, one line each, with where each lives.
 3. **Route**: a suggested reading order with a one-line rationale. A good default is: the entry point, then the core domain logic, then the supporting machinery, with periphery skipped.
 4. **Landmarks worth knowing up front**: anything that will confuse a first-time reader if met cold, such as generated code, a naming convention, or a directory that lies about its contents.
 
-Before presenting the map, verify it against the code: each component's stated location and each landmark checked against the files themselves, with anything resting on a file you never opened labeled as such rather than presented with the same confidence. The map steers the whole tour, and a wrong stop early costs every stop after it.
+Before presenting the map, verify it against the code: each component's stated location and each landmark checked against the files themselves, and the goal-relevant paths swept for components the map missed, with anything resting on a file you never opened labeled as such rather than presented with the same confidence. The map steers the whole tour, and a wrong or missing stop early costs every stop after it.
 
-Then ask where they want to start. Default to your route if they defer.
+Then present it and ask where they want to start. Default to your route if they defer.
 
 ## Step 4: Guide one stop per turn
 
@@ -46,7 +46,7 @@ Adapt the pacing to signals. A user who answers quickly and accurately gets bigg
 
 When the route is covered (or the user says they are done), ask them to sketch the system back to you from memory: the components, how a representative request or data item flows through, and where they would look first for the kind of change they care about. Check the sketch against the code and correct what drifted.
 
-Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
+Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it).
 
 ## Rules
 
@@ -54,4 +54,4 @@ Do not produce a written summary, architecture overview, or notes document. This
 - Every stop includes a prediction or question before the code is discussed. Reading without a question is just scrolling.
 - One stop per turn. The user is reading code in another window.
 - Cite real locations for every claim about the code. If you have not read the file in question, say so instead of extrapolating from its name.
-- If the user asks for just the summary, explain once why the tour beats the summary, and offer to shorten the route to the two or three stops that matter most. If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks for just the summary, explain once why the tour beats the summary, and offer to shorten the route to the two or three stops that matter most. If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.
