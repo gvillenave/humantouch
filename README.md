@@ -84,7 +84,7 @@ Triggers whenever you ask to break down a project, plan or sequence implementati
 
 ## Design principles
 
-Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is handed over unchecked. Verification takes one of two forms, depending on the skill's shape. Skills that check claims at the moment they are used verify inline, claim by claim — debug-coach runs the code instead of predicting it, codebase-tour-guide and reading-companion check each answer against the source as you go. Skills that assemble claims into material handed over in bulk — an outline, a map, raw material for a document, a wrap-up recap — run a verification pass before the handoff:
+Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is presented as checked unless it actually was. Verification takes one of two forms, depending on the skill's shape. Skills that check claims at the moment they are used verify inline, claim by claim — debug-coach runs the code instead of predicting it, codebase-tour-guide and reading-companion check each answer against the source as you go. Skills that assemble claims into material handed over in bulk — an outline, a map, raw material for a document, a wrap-up recap — run a verification pass before the handoff:
 
 - Re-check every claim against the source it came from.
 - Sweep the reverse direction: nothing in scope in the sources is missing from what is handed over.
