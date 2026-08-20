@@ -35,6 +35,8 @@ Read the sources and build a work inventory. Present it as findings, not as a pl
 - Conflicts between sources, stated plainly
 - Work the sources imply but never state — migrations, rollout, monitoring, test data — raised as questions ("the design changes the schema but nothing mentions a migration; is that in scope?"), never silently added as work items
 
+Before presenting the inventory, verify it: every pointer re-checked against its source so the item says what the source says. Steps 3 through 5 build every decision on this inventory, and an error cheap to fix here is expensive to unwind at step 6.
+
 Then stop and let the user react. They confirm, trim, and add; scope verdicts get recorded in their words. Do not proceed to structure until the inventory is theirs.
 
 ### 3. Shape the structure, one decision per turn
@@ -56,7 +58,7 @@ For the current milestone, propose a candidate split drawn only from the validat
 - Tickets with a hidden dependency on another ticket get flagged
 - Tickets too vague to start get flagged with what is missing, as a question
 
-A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back. When the user wants coaching on the numbers themselves, that is estimation-coach's job (from this marketplace, installable if missing).
+A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back. When the user wants coaching on the numbers themselves, that is estimation-coach's job (from this marketplace; it can be installed if the user doesn't have it).
 
 ### 5. Assemble the outline
 

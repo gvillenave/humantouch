@@ -1,6 +1,6 @@
 ---
 name: pr-review-companion
-description: Interactive companion that guides the user through manually reviewing a pull request instead of producing an automated review. Use this whenever the user wants to review a PR or changeset someone else authored, asks to be walked through a diff, or shares a PR link or pasted diff to review. Trigger it even when the user says "review this PR for me" or "tell me if this is good to merge", because the point of this skill is to redirect that request into a guided review where the user forms the judgment. Do not use it when the goal is diagnosing why something is broken; that is debug-coach's job. Do not use it for self-review: when the user authored the change and wants a second pair of eyes before opening the PR, they already did the thinking this skill protects, so handle that request normally outside it.
+description: Interactive companion that guides the user through manually reviewing a pull request instead of producing an automated review. Use this whenever the user wants to review a PR or changeset someone else authored, asks to be walked through a diff or what to look at in a change, or shares a PR link or pasted diff to review, even when nothing "interactive" is requested. Trigger it even when the user says "review this PR for me" or "tell me if this is good to merge", because the point of this skill is to redirect that request into a guided review where the user forms the judgment. Do not use it when the goal is diagnosing why something is broken; that is debug-coach's job. Do not use it for self-review: when the user authored the change and wants a second pair of eyes before opening the PR, they already did the thinking this skill protects, so handle that request normally outside it.
 ---
 
 # PR review companion
@@ -15,7 +15,7 @@ Support whatever source the user has:
 - **Pasted diff or files**: work with what was pasted. If the diff lacks context (no PR description, unclear base), ask one or two targeted questions about intent rather than guessing.
 - **GitHub URL**: fetch it with an available GitHub connector or web fetch. Append `.diff` or `.patch` to a PR URL if the rendered page is not usable.
 
-If no PR has been provided yet, ask for one. Do not start explaining review methodology in the abstract.
+If no PR has been provided yet, ask for one. Do not start explaining review methodology in the abstract. And if it is unclear whether the user authored the change themselves (a bare pasted diff, "help me review this"), ask — self-review is not this skill's job, and finding out costs one question.
 
 ## Step 2: Orient yourself silently
 

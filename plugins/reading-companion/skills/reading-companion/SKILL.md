@@ -47,13 +47,13 @@ Skimmable sections can be batched; careful sections get a turn each. The user se
 
 When the plan is covered (or the user says they are done), have the user state their overall takeaways: what the document establishes, what it does not, and what it means for the decision or work at hand. Check the statement against the text one last time, and name anything load-bearing that was skipped.
 
-Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
+Do not produce a summary, notes, or an annotated outline. The user's own notes, written by them along the way, are the artifact, and this skill does not write them. If the user wants a document out of their reading, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it).
 
 ## Rules
 
 - Never summarize the document's content, at any point. The map describes what sections are for; it does not carry their conclusions.
 - Never supply a corrected takeaway. Point at the passage and let the user extract it; understanding they fetched beats understanding they received.
-- Quote the text when confirming a takeaway; claims about what the document says come with the words that say it. When a takeaway misses, point at the passage without quoting the answer — the quote would be the corrected takeaway.
+- Quote the text when confirming a takeaway; claims about what the document says come with the words that say it. When a takeaway misses, first point at the passage without quoting the answer — the quote would be the corrected takeaway. If the user rereads and still holds their reading, then quote the words and work through the discrepancy openly; a miss you cannot back with text on request is a miss to withdraw.
 - Triage honestly in the reading plan. Cutting the user's reading load to the sections that matter is the whole bargain for not getting a summary.
 - One careful section per turn. The user is reading in another window.
 - If the user asks for just the TLDR, explain the purpose of this workflow once and offer a tighter reading plan instead (the two or three passages that decide their question). If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

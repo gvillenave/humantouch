@@ -46,7 +46,7 @@ Adapt the pacing to signals. A user who answers quickly and accurately gets bigg
 
 When the route is covered (or the user says they are done), ask them to sketch the system back to you from memory: the components, how a representative request or data item flows through, and where they would look first for the kind of change they care about. Check the sketch against the code and correct what drifted.
 
-Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for the doc-coach plugin from this marketplace, if they have it installed.
+Do not produce a written summary, architecture overview, or notes document. This skill ends with the model in the user's head, not in a file. If the user wants to write up what they learned for their team, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it).
 
 ## Rules
 

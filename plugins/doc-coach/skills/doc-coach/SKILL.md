@@ -19,7 +19,7 @@ Your deliverable is guidance, never the document.
 
 Before proposing anything, confirm you know:
 
-- What kind of document this is (the Doc types section below lists the common ones)
+- What kind of document this is (references/doc-types.md lists the common ones)
 - Who the readers are and what decision or action the doc should enable
 - What source material exists: conversation history, code, diagrams, prior docs, the user's head
 
