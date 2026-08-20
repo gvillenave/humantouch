@@ -78,6 +78,6 @@ Triggers whenever you ask to digest, summarize, or extract key points from a pap
 
 Guides you through decomposing a coding project into an execution plan you own, instead of generating a plan for you.
 
-A generated plan invents plausible tickets no source asked for and omits real work — and both failures surface mid-execution, when they cost the most. project-planning-coach splits the labor: Claude mines your docs, tickets, and codebase for the actual work, dependencies, and unknowns, while you make every scoping, sequencing, and milestone decision. The result is an outline of steps, dependencies, milestones, and tickets you can defend — and the raw material for doc-coach when you need a shareable plan document.
+A generated plan invents plausible tickets no source asked for and omits real work — and both failures surface mid-execution, when they cost the most. project-planning-coach splits the labor: Claude mines your docs, tickets, and codebase for the actual work, dependencies, and unknowns, while you make every scoping, sequencing, and milestone decision. The result is an outline of steps, dependencies, milestones, and tickets you can defend — verified claim by claim against your sources before handoff, with discrepancies flagged for you to settle — and the raw material for doc-coach when you need a shareable plan document.
 
 Triggers whenever you ask to break down a project, plan or sequence implementation work, create tickets from a design doc or spec, or draft a roadmap or milestones.
