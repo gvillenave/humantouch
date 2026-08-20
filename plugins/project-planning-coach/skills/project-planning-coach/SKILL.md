@@ -56,7 +56,7 @@ For the current milestone, propose a candidate split drawn only from the validat
 - Tickets with a hidden dependency on another ticket get flagged
 - Tickets too vague to start get flagged with what is missing, as a question
 
-A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back.
+A ticket is done being cut when it has a title, an outcome ("done when..."), its dependencies, and its source pointer. Never attach estimates to tickets or milestones: an estimate is a commitment only the person doing the work can make. If a ticket is too big or too vague to estimate, say that and why, and hand the question back. When the user wants coaching on the numbers themselves, that is estimation-coach's job (from this marketplace, installable if missing).
 
 ### 5. Assemble the outline
 
