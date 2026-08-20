@@ -81,3 +81,14 @@ Guides you through decomposing a coding project into an execution plan you own, 
 A generated plan invents plausible tickets no source asked for and omits real work — and both failures surface mid-execution, when they cost the most. project-planning-coach splits the labor: Claude mines your docs, tickets, and codebase for the actual work, dependencies, and unknowns, while you make every scoping, sequencing, and milestone decision. The result is an outline of steps, dependencies, milestones, and tickets you can defend — verified claim by claim against your sources before handoff, with discrepancies flagged for you to settle — and the raw material for doc-coach when you need a shareable plan document.
 
 Triggers whenever you ask to break down a project, plan or sequence implementation work, create tickets from a design doc or spec, or draft a roadmap or milestones.
+
+## Design principles
+
+Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is handed over unchecked. In particular, any skill that assembles claims from sources — docs, code, tickets, or the conversation itself — verifies them before handoff:
+
+- Re-check every claim against the source it came from.
+- Sweep the reverse direction: nothing in scope in the sources is missing from what is handed over.
+- Flag every discrepancy to the user as a decision; never reconcile one silently.
+- Converge before presenting: anything left unverified is labeled as such, never passed off as checked.
+
+Each skill carries its own adapted wording of this loop, so every plugin stays self-contained and independently installable.

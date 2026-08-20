@@ -47,7 +47,7 @@ Then let the user write their own cases. When they return, review what the tests
 
 ### 4. Wrap up conversationally
 
-When the units are covered (or the user says they are done), recap briefly: what is now protected, the risks the user explicitly chose not to cover, and any assumption worth revisiting when the code changes. Mention untested areas plainly; a known gap is fine, an unknown one is not.
+When the units are covered (or the user says they are done), reconcile the session against your risk map from step 1 before recapping: every risk you mapped ends as a named case (written or implemented), an explicit decline by the user, or a gap you now name — checked against the actual tests and the user's actual verdicts, not recalled. A risk that quietly fell out of the conversation gets raised now, as a question. Then recap briefly: what is now protected, the risks the user explicitly chose not to cover, and any assumption worth revisiting when the code changes. Mention untested areas plainly; a known gap is fine, an unknown one is not.
 
 Do not produce a test plan document or a fresh backlog of unwritten cases. The tests that exist at the end are the ones the user named, written by them or implemented on their explicit approval; this skill ends with the user able to explain why each of those tests exists.
 

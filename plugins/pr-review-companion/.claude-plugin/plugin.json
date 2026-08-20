@@ -1,7 +1,7 @@
 {
   "name": "pr-review-companion",
   "description": "Interactive companion that guides you through manually reviewing a pull request instead of reviewing it for you. Explains the PR's scope, breaks the change into logical components, and walks through them one at a time while you form your own judgment.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "gvillenave",
     "email": "ai@gabvil.com"

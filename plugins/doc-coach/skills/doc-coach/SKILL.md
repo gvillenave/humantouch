@@ -39,6 +39,8 @@ Cover exactly one section per turn, then hand off. For each section provide:
 
 **Hints.** Two to four short pointers: what to lead with, what to cut, what the reader will push back on, a target length (for example "one paragraph and a table").
 
+Before handing the section over, verify it: re-check each raw-material bullet against the material it came from — the conversation, the code, the doc, or a handed-off artifact such as a project-planning-coach outline or a design-sparring-partner decision list. A bullet that says more than its source, or contradicts it, gets fixed or becomes an open question; where two sources disagree, flag the disagreement for the user to settle rather than picking a side. The user is about to turn these bullets into sentences reviewers will trust, and an unverified bullet becomes an unverified sentence with their name on it.
+
 Then stop and let the user write. When they return, move to the next section.
 
 ## Rules

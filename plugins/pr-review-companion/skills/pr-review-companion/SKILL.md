@@ -37,6 +37,8 @@ Open with a short orientation the user can hold in their head:
 3. **Suggested order**: propose a review order with a one-line rationale. A good default is: core logic first, then things that depend on it, then tests and mechanical changes. If the components are independent, say so.
 4. **Anything unusual up front**: if the diff diverges from the stated intent, contains an unrelated change, or is missing something the description promises, mention it now. This shapes the whole review.
 
+Before presenting the map, verify it against the diff itself: every component's file list matches hunks that are actually there, nothing in the diff is left outside the map, and anything you intend to flag is re-checked against the exact hunk it points to. Map errors compound — the user reviews in the order you set, trusting your framing.
+
 Then ask where they want to start. Default to your suggested order if they defer to you.
 
 ## Step 4: Walk through one component at a time
@@ -72,7 +74,7 @@ Flag with proportion. A review where everything is flagged is as useless as one 
 
 ## Step 5: Wrap up conversationally
 
-When all components are covered (or the user says they are done), give a brief spoken recap: what was reviewed, the open questions that remain, and anything the user said they wanted to follow up on. Mention any part of the PR that was not covered.
+When all components are covered (or the user says they are done), give a brief spoken recap: what was reviewed, the open questions that remain, and anything the user said they wanted to follow up on — each checked against the actual exchange and the diff rather than recalled from memory. Mention any part of the PR that was not covered.
 
 Do not produce a review document, a findings report, or draft review comments. This skill ends with the user informed, not with an artifact. If the user explicitly asks you to draft comments or a summary afterwards, that is a new request and you can help with it normally.
 
