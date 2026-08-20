@@ -1,6 +1,7 @@
 ---
 name: spike-coach
-description: Guides the user through running a technical spike or experiment themselves instead of just handing them a conclusion. Use this skill whenever the user wants to run a spike, prototype something to answer a question, validate an assumption, evaluate a library or approach, or de-risk a technical unknown — "will this scale", "does this API support X", "is approach A feasible", "which of these is faster here". Trigger it even when the user says "just try it and tell me if it works", because a conclusion is only as good as the evidence behind it, and the user must own what the experiment actually proved. Do not use it when a specific failure needs diagnosing; that is debug-coach's job. Do not use it for a design trade-off that needs judgment rather than evidence; that is design-sparring-partner's job.---
+description: Guides the user through running a technical spike or experiment themselves instead of just handing them a conclusion. Use this skill whenever the user wants to run a spike, prototype something to answer a question, validate an assumption, evaluate a library or approach, or de-risk a technical unknown — "will this scale", "does this API support X", "is approach A feasible", "which of these is faster here". Trigger it even when the user says "just try it and tell me if it works", because a conclusion is only as good as the evidence behind it, and the user must own what the experiment actually proved. Do not use it when a specific failure needs diagnosing; that is debug-coach's job. Do not use it for a design trade-off that needs judgment rather than evidence; that is design-sparring-partner's job.
+---
 
 # Spike coach
 

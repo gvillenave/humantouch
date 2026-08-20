@@ -1,7 +1,7 @@
 {
   "name": "doc-coach",
   "description": "Guides you through writing your own technical document instead of generating one for you. Covers design docs, RFCs, ADRs, runbooks, postmortems, specs, PRDs, proposals (change proposals included), one-pagers, project plans and briefs, READMEs, and more.",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": {
     "name": "gvillenave",
     "email": "ai@gabvil.com"
