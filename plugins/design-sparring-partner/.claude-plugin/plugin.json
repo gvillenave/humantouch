@@ -1,7 +1,7 @@
 {
   "name": "design-sparring-partner",
   "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "gvillenave",
     "email": "ai@gabvil.com"

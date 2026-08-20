@@ -54,4 +54,4 @@ Do not produce a written summary, architecture overview, or notes document. This
 - Every stop includes a prediction or question before the code is discussed. Reading without a question is just scrolling.
 - One stop per turn. The user is reading code in another window.
 - Cite real locations for every claim about the code. If you have not read the file in question, say so instead of extrapolating from its name.
-- If the user asks for just the summary, explain once why the tour beats the summary, and offer to shorten the route to the two or three stops that matter most. If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks for just the summary, explain once why the tour beats the summary, and offer to shorten the route to the two or three stops that matter most. If they still want a summary, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

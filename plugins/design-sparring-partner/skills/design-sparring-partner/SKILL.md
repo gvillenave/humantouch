@@ -52,4 +52,4 @@ Do not produce an architecture document, a diagram, or a design writeup. This sk
 - One decision per turn. Depth on one choice beats coverage of five.
 - Stress-test every decision, including the ones you agree with. Agreement is not a reason to skip the scenario.
 - Ground every consequence in the constraints from step 1. If a claimed consequence does not apply at the user's scale or team size, do not use it for drama.
-- If the user asks you to just design the whole thing, explain the purpose of this workflow once and offer to sharpen the decision framing instead. If they still want a generated design, tell them plainly that this skill does not produce one and they can ask outside this workflow.
+- If the user asks you to just design the whole thing, explain the purpose of this workflow once and offer to sharpen the decision framing instead. If they still want a generated design, tell them plainly that this skill does not produce one and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.

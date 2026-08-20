@@ -49,7 +49,7 @@
       "name": "debug-coach",
       "source": "./plugins/debug-coach",
       "description": "Guides you through diagnosing and fixing a bug yourself instead of patching it for you. Gathers the evidence, poses ranked hypotheses, and walks the investigation one step at a time while you form the diagnosis and write the fix.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -67,7 +67,7 @@
       "name": "design-sparring-partner",
       "source": "./plugins/design-sparring-partner",
       "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"

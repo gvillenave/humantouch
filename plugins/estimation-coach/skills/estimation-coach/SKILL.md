@@ -56,4 +56,4 @@ If the total does not fit the deadline, the honest moves are cutting scope or sh
 - Ground every surfaced piece of work in a source or the user's words, with the pointer kept. Implied work arrives as a question, never as something silently priced in.
 - One item, or one coherent batch of small similar items, per turn. The user is thinking about real work between turns.
 - Stress-test every number, including the ones that look generous. Agreement is not a reason to skip the scenario.
-- If the user asks you to just estimate everything, explain the purpose of this workflow once and offer to move faster by batching similar items. If they still want generated numbers, tell them plainly that this skill does not produce any and they can ask outside this workflow.
+- If the user asks you to just estimate everything, explain the purpose of this workflow once and offer to move faster by batching similar items. If they still want generated numbers, tell them plainly that this skill does not produce any and they can ask outside this workflow — and honor that renewed ask outside it, rather than re-triggering this skill.
