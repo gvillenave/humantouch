@@ -83,7 +83,7 @@ An outline assembled at the end of a long session is written partly from memory,
 
 The outline converges when a pass flags nothing new; a discrepancy the user has chosen to carry stays in the outline marked unresolved and is not re-flagged. The converged outline is the deliverable: present it, and write it to a file if the user wants it out of the conversation. If the user waves the verification off, deliver the outline the same way — presented, offered as a file — after saying once what was left unchecked and marking it unverified.
 
-### 7. Offer the doc-coach handoff
+### 7. Offer the handoffs
 
 The outline is working material, not a document for other humans. If the user needs a shareable writeup — a project brief, a kickoff doc, a plan for stakeholder review — that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it). Offer the handoff once, and note that this outline is exactly the raw material doc-coach starts from: the user will write the document themselves, with the decisions already made. Agreed spikes in the outline are run with spike-coach (from this marketplace; it can be installed if the user doesn't have it).
 

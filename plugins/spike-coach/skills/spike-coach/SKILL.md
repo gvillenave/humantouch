@@ -1,6 +1,6 @@
 ---
 name: spike-coach
-description: Guides the user through running a technical spike or experiment themselves instead of just handing them a conclusion. Use this skill whenever the user wants to run a spike, prototype something to answer a question, validate an assumption, evaluate a library or approach, or de-risk a technical unknown — "will this scale", "does this API support X", "is approach A feasible", "which of these is faster here". Trigger it even when the user says "just try it and tell me if it works", because a conclusion is only as good as the evidence behind it, and the user must own what the experiment actually proved. Do not use it when a specific failure needs diagnosing; that is debug-coach's job. Do not use it for a design trade-off that needs judgment rather than evidence; that is design-sparring-partner's job.
+description: Guides the user through running a technical spike or experiment themselves instead of just handing them a conclusion. Use this skill whenever the user wants to run a spike, prototype something to answer a question, validate an assumption, evaluate a library or approach, or de-risk a technical unknown — "will this scale", "does this API actually behave that way in practice", "is approach A feasible", "which of these is faster here". Trigger it even when the user says "just try it and tell me if it works", because a conclusion is only as good as the evidence behind it, and the user must own what the experiment actually proved. Do not use it when a specific failure needs diagnosing; that is debug-coach's job. Do not use it for a design trade-off that needs judgment rather than evidence; that is design-sparring-partner's job.
 ---
 
 # Spike coach
@@ -15,14 +15,14 @@ This skill splits the labor the way debug-coach does, pointed at unknowns instea
 
 ### 1. Frame the spike before anything runs
 
-A spike often arrives from elsewhere: an agreed spike in a project-planning-coach outline, an unvalidated assumption from a design-sparring-partner session, an item estimation-coach recorded as too uncertain to price. Wherever it came from, confirm the frame with the user before touching anything:
+First check whether the documentation already settles the question — a spike is for unknowns that survive the docs. If they answer it, say so with the citation and skip the spike; running an experiment to rediscover a documented fact spends the user's timebox on nothing.
+
+A spike often arrives from another coach's session — an agreed spike in a planning outline, an unvalidated design assumption, an item too uncertain to price. Wherever it came from, confirm the frame with the user before touching anything:
 
 - The unknown, as one question the user states
 - The decision it unblocks, and what the user would do differently under each answer. If no decision changes, say so — that is curiosity, not a spike, and the honest move is to not run it
 - The hypothesis as a testable expectation ("if LISTEN/NOTIFY can carry our fan-out, then N subscribers at rate R should see latency under L"), and — named in advance — what result would kill it
 - The timebox, in the user's units
-
-First check whether the documentation already settles the question — a spike is for unknowns that survive the docs. If they answer it, say so with the citation and skip the spike; running an experiment to rediscover a documented fact spends the user's timebox on nothing.
 
 Underspecified framing is normal, so propose structure freely — the distinction the question hides, candidate metrics worth pinning — but the numbers, the kill criterion, and the final wording of the hypothesis are the user's to state. Do not run anything until the frame is theirs. A kill criterion named after the results arrive is a rationalization, not a criterion.
 
@@ -30,7 +30,7 @@ Underspecified framing is normal, so propose structure freely — the distinctio
 
 Propose candidate experiment shapes as starting material — the smallest setups that would produce the evidence — with the consequences of each stated plainly: what this setup can prove, and what it cannot. Name every proxy out loud: synthetic data, a mocked dependency, a scale far below production, a single run standing in for variance. A proxy is fine when the user accepts it knowingly; it is a trap when it surfaces later inside a verdict.
 
-The user picks the shape. Do not recommend, and do not quietly upgrade the experiment beyond what the question needs — the smallest sufficient experiment is the discipline that keeps a spike from becoming a project.
+The user picks the shape. Do not push a favorite — the candidate shapes are starting material, not a recommendation — and do not quietly upgrade the experiment beyond what the question needs: the smallest sufficient experiment is the discipline that keeps a spike from becoming a project.
 
 ### 3. Run and report, one experiment per turn
 
