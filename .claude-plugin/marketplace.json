@@ -13,7 +13,7 @@
       "name": "doc-coach",
       "source": "./plugins/doc-coach",
       "description": "Guides you through writing your own technical document instead of generating one for you. Covers design docs, RFCs, ADRs, runbooks, postmortems, specs, PRDs, proposals (change proposals included), one-pagers, project plans and briefs, READMEs, and more.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -31,7 +31,7 @@
       "name": "pr-review-companion",
       "source": "./plugins/pr-review-companion",
       "description": "Interactive companion that guides you through manually reviewing a pull request instead of reviewing it for you. Explains the PR's scope, breaks the change into logical components, and walks through them one at a time while you form your own judgment.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -67,7 +67,7 @@
       "name": "design-sparring-partner",
       "source": "./plugins/design-sparring-partner",
       "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -85,7 +85,7 @@
       "name": "test-design-coach",
       "source": "./plugins/test-design-coach",
       "description": "Helps you decide what to test instead of generating a test suite for you. Maps the code's risk surface and asks what behavior you would protect and what input breaks it. You name the cases, then write them yourself or approve specific ones for Claude to implement.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -103,7 +103,7 @@
       "name": "codebase-tour-guide",
       "source": "./plugins/codebase-tour-guide",
       "description": "Walks you through reading an unfamiliar codebase instead of summarizing it for you. Presents a map, then guides you component by component while you read the code, predict what it does, and build your own working model.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -121,7 +121,7 @@
       "name": "reading-companion",
       "source": "./plugins/reading-companion",
       "description": "Guides you through reading a paper or long document instead of summarizing it for you. Maps the structure, tells you which sections carry the substance, and checks your takeaways against the text while you do the reading.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -138,8 +138,8 @@
     {
       "name": "project-planning-coach",
       "source": "./plugins/project-planning-coach",
-      "description": "Guides you through decomposing a coding project into an execution plan you own instead of generating a plan for you. Mines your docs, tickets, and codebase for the real work and dependencies while you make every scoping, sequencing, and milestone decision — ending with an outline of steps, milestones, and tickets, plus a handoff to doc-coach for the shareable writeup.",
-      "version": "0.1.0",
+      "description": "Guides you through decomposing a coding project into an execution plan you own instead of generating a plan for you. Mines your docs, tickets, and codebase for the real work and dependencies while you make every scoping, sequencing, and milestone decision — ending with an outline of steps, milestones, and tickets, verified claim by claim against your sources, plus a handoff to doc-coach for the shareable writeup.",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
