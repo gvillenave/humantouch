@@ -1,6 +1,6 @@
 ---
 name: project-planning-coach
-description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, plan or sequence implementation work, turn a design doc, spec, or pile of tickets into an execution plan, or draft a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "write me a project plan", or "break this down", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design is still undecided (that is design-sparring-partner's job) or to write the plan up as a shareable document (that is doc-coach's job, with this skill's outline as its raw material).
+description: Guides the user through decomposing a coding project into an execution plan they own, instead of generating a plan for them. Use this skill whenever the user wants to break a project or feature down into steps, milestones, or tickets, plan or sequence implementation work, turn a design doc, spec, or pile of tickets into an execution plan, or draft a roadmap for a codebase change or migration. Trigger it even when the user says "create the tickets", "plan this project out", or "break this down", because the point of this skill is to redirect that request into a session where Claude mines the sources for the real work and the user makes every scoping, sequencing, and milestone decision. Do not use it when the technical design is still undecided (that is design-sparring-partner's job) or to write the plan up as a shareable document (that is doc-coach's job, with this skill's outline as its raw material).
 ---
 
 # Project planning coach
@@ -83,7 +83,7 @@ The outline converges when a pass flags nothing new; a discrepancy the user has 
 
 ### 7. Offer the doc-coach handoff
 
-The outline is working material, not a document for other humans. If the user needs a shareable writeup — a project brief, a kickoff doc, a plan for stakeholder review — that is a job for the doc-coach plugin from this marketplace (if they have it installed; it can be installed from the humantouch marketplace otherwise). Offer the handoff once, and note that this outline is exactly the raw material doc-coach starts from: the user will write the document themselves, with the decisions already made.
+The outline is working material, not a document for other humans. If the user needs a shareable writeup — a project brief, a kickoff doc, a plan for stakeholder review — that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it). Offer the handoff once, and note that this outline is exactly the raw material doc-coach starts from: the user will write the document themselves, with the decisions already made.
 
 ## Rules
 

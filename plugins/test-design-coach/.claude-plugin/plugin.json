@@ -1,7 +1,7 @@
 {
   "name": "test-design-coach",
   "description": "Helps you decide what to test instead of generating a test suite for you. Maps the code's risk surface and asks what behavior you would protect and what input breaks it. You name the cases, then write them yourself or approve specific ones for Claude to implement.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "gvillenave",
     "email": "ai@gabvil.com"

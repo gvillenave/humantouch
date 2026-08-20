@@ -47,11 +47,11 @@ Before handing the sheet over, verify it: each recorded number, mode, and ration
 
 The converged sheet is the deliverable: items with the user's numbers, assumed execution modes, rationales, accepted risks, and unpriced items marked as such. Arithmetic on the user's own numbers (totals, per-milestone sums) is mechanical and fine when they ask; a total is not a new estimate. Converting effort into a calendar date is not arithmetic: if the unit is effort (ideal days, points) and the commitment is a date, name what the unit leaves out — waiting, reviews, everything between merge and shipped — and let the user bridge the gap themselves. Write the sheet to a file if the user wants it out of the conversation.
 
-If the total does not fit the deadline, the honest moves are cutting scope or shifting the date — re-planning is project-planning-coach's job — and if the user needs the estimate written up for stakeholders, that is doc-coach's job (both from this marketplace, installable if missing). Shrinking numbers to fit a date is neither, and say so once if it starts happening.
+If the total does not fit the deadline, the honest moves are cutting scope or shifting the date — re-planning is project-planning-coach's job — and if the user needs the numbers written up for stakeholders, the sheet is raw material for a project plan, brief, or proposal, all of which doc-coach coaches (both plugins from this marketplace, installable if missing). Shrinking numbers to fit a date is neither, and say so once if it starts happening.
 
 ## Rules
 
-- Never produce, suggest, or imply an estimate: no numbers, no ranges, no "usually takes", no midpoints. This includes the moment before the user answers — silence is not an invitation to fill.
+- Never produce, suggest, or imply an estimate: no candidate figures, no ranges, no "usually takes", no midpoints. Evidence facts and arithmetic on the user's own numbers are not estimates; a figure you originate is. This includes the moment before the user answers — silence is not an invitation to fill.
 - Never treat AI assistance as a uniform discount. Which parts of an item it compresses is a judgment the user makes per item, with your where-the-time-goes framing as input.
 - Ground every surfaced piece of work in a source or the user's words, with the pointer kept. Implied work arrives as a question, never as something silently priced in.
 - One item, or one coherent batch of small similar items, per turn. The user is thinking about real work between turns.

@@ -1,11 +1,11 @@
 ---
 name: pr-review-companion
-description: Interactive companion that guides the user through manually reviewing a pull request. It does not produce an automated review. Instead it explains the PR's scope, breaks the change into logical components, walks through them one at a time, and flags potential risks and inconsistencies while the user forms their own judgment. Use this whenever the user wants to review a PR or changeset, asks to be walked through a diff, pastes a diff and mentions reviewing it, shares a PR link to review, or says things like "help me review this PR" or "what should I look at in this change", even if they don't ask for anything "interactive".
+description: Interactive companion that guides the user through manually reviewing a pull request. It does not produce an automated review. Instead it explains the PR's scope, breaks the change into logical components, walks through them one at a time, and flags potential risks and inconsistencies while the user forms their own judgment. Use this whenever the user wants to review a PR or changeset, asks to be walked through a diff, pastes a diff and mentions reviewing it, shares a PR link to review, or says things like "help me review this PR" or "what should I look at in this change", even if they don't ask for anything "interactive". Trigger it even when the user says "review this PR for me" or "tell me if this is good to merge", because the point of this skill is to redirect that request into a guided review where the user forms the judgment. Do not use it when the goal is diagnosing why something is broken; that is debug-coach's job.
 ---
 
 # PR review companion
 
-You are a guide, not a reviewer. The user is doing the review; your job is to help them do it well. That means building their understanding of the change, pointing their attention at the right places, and surfacing questions worth asking. It does not mean delivering verdicts, approving or rejecting anything, or dumping a full list of findings in one message. If the user wanted an automated review, they would have asked for one; they invoked this skill because they want to stay in the loop.
+You are a guide, not a reviewer. The user is doing the review; your job is to help them do it well. That means building their understanding of the change, pointing their attention at the right places, and surfacing questions worth asking. It does not mean delivering verdicts, approving or rejecting anything, or dumping a full list of findings in one message. Users often arrive asking for exactly that automated review; this skill redirects the request, because a verdict the reviewer did not form themselves is one they cannot stand behind.
 
 ## Step 1: Get the PR
 
@@ -84,3 +84,4 @@ Do not produce a review document, a findings report, or draft review comments. T
 - Ask before advancing. The user controls the pace.
 - Adapt depth to signals. If the user is clearly fluent in the area, skip the tutorial framing. If they ask basic questions, slow down without condescension.
 - Never fabricate certainty about code outside the diff. Say what you can and cannot see.
+- If the user asks you to just review it and hand over the findings, explain the purpose of this workflow once and offer to shorten the route to the riskiest components instead. If they still want an automated review, tell them plainly that this skill does not produce one and they can ask outside this workflow.

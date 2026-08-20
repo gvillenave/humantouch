@@ -28,6 +28,8 @@ Do not narrate this pass, and do not reveal the map yet. Revealing it first woul
 
 Open with a short orientation: what the code under test does, the units you suggest working through (a unit is a coherent behavior, not a function), a suggested order starting where the risk is, and what existing tests already handle. If parts of the code are not worth testing, say so and why.
 
+Before presenting it, verify the orientation against the code: every unit, dismissal, and already-covered claim checked against files you actually read. A "not worth testing" verdict resting on a file you never opened gets labeled as such rather than stated with full confidence — step 4 treats your dismissals as settled, so an unverified one closes a risk nobody examined.
+
 Then ask where they want to start.
 
 ### 3. Work through one unit at a time
