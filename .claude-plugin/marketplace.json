@@ -103,7 +103,7 @@
       "name": "codebase-tour-guide",
       "source": "./plugins/codebase-tour-guide",
       "description": "Walks you through reading an unfamiliar codebase instead of summarizing it for you. Presents a map, then guides you component by component while you read the code, predict what it does, and build your own working model.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -121,7 +121,7 @@
       "name": "reading-companion",
       "source": "./plugins/reading-companion",
       "description": "Guides you through reading a paper or long document instead of summarizing it for you. Maps the structure, tells you which sections carry the substance, and checks your takeaways against the text while you do the reading.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"

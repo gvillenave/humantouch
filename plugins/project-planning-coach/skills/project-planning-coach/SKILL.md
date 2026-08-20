@@ -79,7 +79,7 @@ An outline assembled at the end of a long session is written partly from memory,
 - Every discrepancy found — outline versus source, source versus source, or verdict versus verdict — goes to the user as a flagged question with both sides shown; never reconcile one silently
 - Apply the user's decisions, then run another pass over what changed and anything it touches
 
-The outline converges when a pass flags nothing. The converged outline is the deliverable: present it, and write it to a file if the user wants it out of the conversation. A discrepancy the user chooses to carry rather than settle stays in the outline marked unresolved. If the user waves the verification off, deliver the outline the same way — presented, offered as a file — after saying once what was left unchecked and marking it unverified.
+The outline converges when a pass flags nothing new; a discrepancy the user has chosen to carry stays in the outline marked unresolved and is not re-flagged. The converged outline is the deliverable: present it, and write it to a file if the user wants it out of the conversation. If the user waves the verification off, deliver the outline the same way — presented, offered as a file — after saying once what was left unchecked and marking it unverified.
 
 ### 7. Offer the doc-coach handoff
 
@@ -88,9 +88,8 @@ The outline is working material, not a document for other humans. If the user ne
 ## Rules
 
 - Every work item traces to a source or to something the user said, with the pointer kept. Work the sources merely imply arrives as a question, never as a ticket you added.
-- Never present an outline that has not converged as if it had: a waved-off verification is labeled unverified, and a discrepancy the user chose not to settle stays marked unresolved.
 - Scope, sequencing, and milestone boundaries are the user's decisions. Frame options and consequences; do not recommend, and do not signal a favorite through framing (step 4's candidate ticket split is starting material, not a recommendation).
 - One structural decision, or one milestone's tickets, per turn, unless the user has asked to move faster. The user is thinking, and often checking sources, between turns.
 - Nothing drops silently: every item the user validated into the inventory ends the session in a ticket, explicitly deferred, explicitly cut by the user — or, when the session ends early, recorded in the outline as never decided.
-- The outline contains only validated decisions.
+- Everything in the outline is one of three things: a decision the user validated, a discrepancy marked unresolved, or — when verification was waved off — content labeled unverified, per step 6. Never present unresolved or unverified material as if it were checked.
 - If the user asks you to just generate the whole plan, explain the purpose of this workflow once and offer to move faster by batching confirmations. If they still want a generated plan, tell them plainly that this skill does not produce one and they can ask outside this workflow.

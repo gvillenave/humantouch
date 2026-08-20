@@ -41,7 +41,7 @@ Keep a running list of decisions made, each recorded in the user's own words alo
 
 ### 4. Wrap up conversationally
 
-When the load-bearing decisions are settled (or the user says they are done), verify the running list against the conversation before reciting it: each recorded decision and accepted risk checked against what the user actually said, and the conversation swept for decisions that never made it onto the list. Where the record has drifted, a decision went uncaptured, or a risk was only ever accepted implicitly, flag it and ask — and let the recap wait for the answers rather than smoothing open items into it. Then recap briefly: the decisions in the user's words, the assumptions still unvalidated, and the accepted risks. Mention any decision that was deferred.
+When the load-bearing decisions are settled (or the user says they are done), check the running list both ways before reciting it: each recorded decision and accepted risk against what the user actually said, and the conversation for decisions or implicitly accepted risks the list missed. Flag every mismatch or gap as a question and wait for the answers before recapping; if the user declines to answer or just wants the recap, deliver it with the unanswered items named as unverified. Then recap briefly: the decisions in the user's words, the assumptions still unvalidated, and the accepted risks. Mention any decision that was deferred.
 
 Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for the doc-coach plugin from this marketplace (if they have it installed), and the decision list from this session is its raw material.
 

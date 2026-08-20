@@ -28,6 +28,8 @@ Open with an orientation:
 3. **Reading plan**: which sections deserve a careful read for this user's purpose, which are safely skimmable, and which can be skipped entirely, each with a one-line reason. Honest triage is the main value of the map; a plan that says "read everything carefully" is a failure.
 4. **Prerequisites**: anything the document assumes that the user may need. Supply brief background here if needed; explaining a prerequisite is fair game, it is the document's content that is off limits.
 
+Before presenting the map, verify it against the document: each section's stated purpose and each skim-or-skip verdict re-checked against the text, and a verdict formed from a skim labeled as such rather than given a careful read's confidence. The plan decides what the user never reads, so a wrong skip is the costliest mistake this skill can make.
+
 Then ask where they want to start. Reading order need not be page order. Suggest they keep notes in their own words as they read; you will not be writing any for them.
 
 ### 3. Accompany the reading, one section per turn
