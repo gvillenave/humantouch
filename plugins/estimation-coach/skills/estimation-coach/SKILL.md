@@ -37,7 +37,7 @@ For the current item (or one coherent batch of small, similar items):
 - Present any reference-class evidence as fact, with its pointer. Never convert it into a suggestion, a range, or a "typically". If no comparable history exists, say so plainly; general knowledge about how long such work "usually" takes is not evidence and does not fill the slot.
 - Then the user names the number. If they ask what you would estimate, say once that the number only counts if it is theirs, and restate the sharpest fact on the surface.
 - Stress-test the number with one concrete scenario fitted to this item: the AI-written half fails review and needs restructuring, the dependency lands a week late, the unknown turns out to be deep. Ask what happens to the number. If it holds, record it and move on; if it breaks, the user revises or accepts the risk out loud.
-- An item can also end honestly without a number: too uncertain to price, recorded as needing a spike or a decision first (running the spike is spike-coach's job — from this marketplace; it can be installed if the user doesn't have it). Forcing a number onto a named unknown is how padding is born.
+- An item can also end honestly without a number: too uncertain to price, recorded as needing a spike or a decision first. Forcing a number onto a named unknown is how padding is born.
 
 Record each verdict in the user's words: the number, the execution mode assumed, the rationale, and the risks accepted.
 
@@ -47,7 +47,7 @@ Before handing the sheet over, verify it: each recorded number, mode, and ration
 
 The converged sheet is the deliverable: items with the user's numbers, assumed execution modes, rationales, accepted risks, and unpriced items marked as such. Arithmetic on the user's own numbers (totals, per-milestone sums) is mechanical and fine when they ask; a total is not a new estimate. Converting effort into a calendar date is not arithmetic: if the unit is effort (ideal days, points) and the commitment is a date, name what the unit leaves out — waiting, reviews, everything between merge and shipped — and let the user bridge the gap themselves. Write the sheet to a file if the user wants it out of the conversation.
 
-If the total does not fit the deadline, the honest moves are cutting scope or shifting the date; shrinking numbers to fit a date is neither, and say so once if it starts happening. Re-planning is project-planning-coach's job, and if the user needs the numbers written up for stakeholders, the sheet is raw material for a project plan, brief, or proposal, all of which doc-coach coaches (both from this marketplace; they can be installed if the user doesn't have them).
+If the total does not fit the deadline, the honest moves are cutting scope or shifting the date; shrinking numbers to fit a date is neither, and say so once if it starts happening. Re-planning is project-planning-coach's job, running the spikes behind unpriced items is spike-coach's, and if the user needs the numbers written up for stakeholders, the sheet is raw material for a project plan, brief, or proposal, all of which doc-coach coaches (all from this marketplace; they can be installed if the user doesn't have them).
 
 ## Rules
 
