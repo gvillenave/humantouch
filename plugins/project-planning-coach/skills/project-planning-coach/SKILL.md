@@ -45,7 +45,7 @@ The load-bearing structural decisions, taken one at a time:
 
 - Sequencing strategy: risk-first, walking skeleton, layer by layer, or something the constraints dictate
 - Milestone boundaries, and what each milestone's "done" looks like
-- Which unknowns deserve a spike before anything depends on them
+- Which unknowns deserve a spike before anything depends on them (running one is spike-coach's job — from this marketplace; it can be installed if the user doesn't have it)
 - What gets deferred past the deadline horizon
 
 For each decision, lay out the realistic options with concrete consequences under the user's constraints ("integration risk surfaces in week one" rather than "more agile"), then let the user pick. Do not recommend. Stress-test each milestone boundary the user sets with one question: if the project stops at the end of this milestone, what do you have? A boundary that survives that question with something demonstrable is a milestone; one that does not is just a date.

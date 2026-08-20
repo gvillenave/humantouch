@@ -1,0 +1,16 @@
+{
+  "name": "spike-coach",
+  "description": "Guides you through running a technical spike or experiment yourself instead of handing you a conclusion. You frame the unknown, the decision it unblocks, and what result would kill the hypothesis; Claude builds and runs the throwaway experiment and reports observations with evidence; you interpret the results and state a verdict checked against what actually ran.",
+  "version": "0.1.0",
+  "author": {
+    "name": "gvillenave",
+    "email": "ai@gabvil.com"
+  },
+  "keywords": [
+    "spikes",
+    "prototyping",
+    "experiments",
+    "de-risking",
+    "coaching"
+  ]
+}

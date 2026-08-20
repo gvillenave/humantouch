@@ -90,6 +90,14 @@ An AI-generated estimate is a confident number nobody can defend — and it anch
 
 Triggers whenever you ask to estimate tickets or a project, size a backlog, assign story points, or judge whether a deadline is realistic.
 
+### spike-coach
+
+Guides you through running a technical spike or experiment yourself instead of handing you a conclusion.
+
+AI makes spikes cheap to run and easy to over-trust: a prototype that "works" proves less than it appears to, and a conclusion you didn't reach is one you can't defend when the decision bites. spike-coach keeps the judgment yours: you frame the unknown, the decision it unblocks, and — before anything runs — what result would kill the hypothesis; Claude builds and runs the throwaway experiment and reports observations with the evidence attached; you interpret the results and state a verdict checked against what actually ran, with every generalization beyond the run conditions flagged. Agreed spikes from project-planning-coach, unvalidated assumptions from design-sparring-partner, and unpriceable items from estimation-coach all land here.
+
+Triggers whenever you ask to run a spike, prototype to answer a question, validate an assumption, evaluate a library or approach, or check whether something is feasible.
+
 ## Design principles
 
 Every plugin follows the same contract: Claude does the legwork, you do the thinking, and nothing is presented as checked unless it actually was. Verification takes two forms, and skills use whichever fits each moment. Claims checked as they are used are verified inline — debug-coach runs the code instead of predicting it, codebase-tour-guide and reading-companion check each answer against the source as you go. Any skill that opens with a map or orientation — a code map, a reading plan, a component map, a risk surface, an estimation surface — verifies it against its sources before presenting it, because what opens the session steers all of it. And material assembled and handed over in bulk — an outline, raw material for a document, a wrap-up recap — gets a verification pass before the handoff:

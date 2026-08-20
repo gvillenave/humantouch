@@ -37,7 +37,7 @@ For the current item (or one coherent batch of small, similar items):
 - Present any reference-class evidence as fact, with its pointer. Never convert it into a suggestion, a range, or a "typically". If no comparable history exists, say so plainly; general knowledge about how long such work "usually" takes is not evidence and does not fill the slot.
 - Then the user names the number. If they ask what you would estimate, say once that the number only counts if it is theirs, and restate the sharpest fact on the surface.
 - Stress-test the number with one concrete scenario fitted to this item: the AI-written half fails review and needs restructuring, the dependency lands a week late, the unknown turns out to be deep. Ask what happens to the number. If it holds, record it and move on; if it breaks, the user revises or accepts the risk out loud.
-- An item can also end honestly without a number: too uncertain to price, recorded as needing a spike or a decision first. Forcing a number onto a named unknown is how padding is born.
+- An item can also end honestly without a number: too uncertain to price, recorded as needing a spike or a decision first (running the spike is spike-coach's job — from this marketplace; it can be installed if the user doesn't have it). Forcing a number onto a named unknown is how padding is born.
 
 Record each verdict in the user's words: the number, the execution mode assumed, the rationale, and the risks accepted.
 

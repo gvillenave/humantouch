@@ -67,7 +67,7 @@
       "name": "design-sparring-partner",
       "source": "./plugins/design-sparring-partner",
       "description": "Stress-tests your system design decisions instead of producing an architecture for you. Interviews you about constraints, poses one trade-off at a time, and challenges each decision you make with concrete failure scenarios.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -139,7 +139,7 @@
       "name": "project-planning-coach",
       "source": "./plugins/project-planning-coach",
       "description": "Guides you through decomposing a coding project into an execution plan you own instead of generating a plan for you. Mines your docs, tickets, and codebase for the real work and dependencies while you make every scoping, sequencing, and milestone decision — ending with an outline of steps, milestones, and tickets, verified claim by claim against your sources, plus a handoff to doc-coach for the shareable writeup.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -157,7 +157,7 @@
       "name": "estimation-coach",
       "source": "./plugins/estimation-coach",
       "description": "Guides you through estimating your own work instead of producing estimates for you. Maps what each ticket actually touches — hidden work, unknowns, and how AI-assisted coding reshapes the effort — then you name every estimate and defend it against concrete stress tests. Ends with an estimate sheet verified against your words and sources.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "gvillenave",
         "email": "ai@gabvil.com"
@@ -170,6 +170,24 @@
         "ai-assisted"
       ],
       "category": "estimation"
+    },
+    {
+      "name": "spike-coach",
+      "source": "./plugins/spike-coach",
+      "description": "Guides you through running a technical spike or experiment yourself instead of handing you a conclusion. You frame the unknown, the decision it unblocks, and what result would kill the hypothesis; Claude builds and runs the throwaway experiment and reports observations with evidence; you interpret the results and state a verdict checked against what actually ran.",
+      "version": "0.1.0",
+      "author": {
+        "name": "gvillenave",
+        "email": "ai@gabvil.com"
+      },
+      "keywords": [
+        "spikes",
+        "prototyping",
+        "experiments",
+        "de-risking",
+        "coaching"
+      ],
+      "category": "experimentation"
     }
   ]
 }
