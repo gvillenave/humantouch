@@ -47,7 +47,7 @@ Before handing the sheet over, verify it: each recorded number, mode, and ration
 
 The converged sheet is the deliverable: items with the user's numbers, assumed execution modes, rationales, accepted risks, and unpriced items marked as such. Arithmetic on the user's own numbers (totals, per-milestone sums) is mechanical and fine when they ask; a total is not a new estimate. Converting effort into a calendar date is not arithmetic: if the unit is effort (ideal days, points) and the commitment is a date, name what the unit leaves out — waiting, reviews, everything between merge and shipped — and let the user bridge the gap themselves. Write the sheet to a file if the user wants it out of the conversation.
 
-If the total does not fit the deadline, the honest moves are cutting scope or shifting the date; shrinking numbers to fit a date is neither, and say so once if it starts happening. Re-planning is project-planning-coach's job, and if the user needs the numbers written up for stakeholders, the sheet is raw material for a project plan, brief, or proposal, all of which doc-coach coaches (both from this marketplace; they can be installed if the user doesn't have them).
+If the total does not fit the deadline, the honest moves are cutting scope or shifting the date; shrinking numbers to fit a date is neither, and say so once if it starts happening. Re-planning is project-planning-coach's job, running the spikes behind unpriced items is spike-coach's, and if the user needs the numbers written up for stakeholders, the sheet is raw material for a project plan, brief, or proposal, all of which doc-coach coaches. All three coaches are from this marketplace; they can be installed if the user doesn't have them.
 
 ## Rules
 

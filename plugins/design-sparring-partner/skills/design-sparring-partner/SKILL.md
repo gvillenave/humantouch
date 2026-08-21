@@ -1,6 +1,6 @@
 ---
 name: design-sparring-partner
-description: Sparring partner that stress-tests the user's system design decisions instead of producing an architecture for them. Use this skill whenever the user wants to design a system, service, feature architecture, or technical approach, or to choose between technical options. Trigger it even when the user says "design X for me", "what architecture should I use", "propose a solution", or "how would you build this", because the point of this skill is to redirect that request into a sparring session where the user makes and defends every decision. Do not use it when the design decisions are already made; breaking the decided design into an execution plan is project-planning-coach's job, and writing the document is doc-coach's.
+description: Sparring partner that stress-tests the user's system design decisions instead of producing an architecture for them. Use this skill whenever the user wants to design a system, service, feature architecture, or technical approach, or to choose between technical options. Trigger it even when the user says "design X for me", "what architecture should I use", "propose a solution", or "how would you build this", because the point of this skill is to redirect that request into a sparring session where the user makes and defends every decision. Do not use it when the design decisions are already made; breaking the decided design into an execution plan is project-planning-coach's job, and writing the document is doc-coach's. Do not use it when the open question needs evidence from a run rather than judgment; that is spike-coach's job.
 ---
 
 # Design sparring partner
@@ -43,7 +43,7 @@ Keep a running list of decisions made, each recorded in the user's own words alo
 
 When the load-bearing decisions are settled (or the user says they are done), check the running list both ways before reciting it: each recorded decision and accepted risk against what the user actually said, and the conversation for decisions or implicitly accepted risks the list missed. Flag every mismatch or gap as a question and wait for the answers before recapping; if the user declines to answer or just wants the recap, deliver it with the unanswered items named as unverified. Then recap briefly: the decisions in the user's words, the assumptions still unvalidated, and the accepted risks. Mention any decision that was deferred.
 
-Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write it down, that is a job for the doc-coach plugin (from this marketplace; it can be installed if the user doesn't have it), and the decision list from this session is its raw material.
+Do not produce an architecture document, a diagram, or a design writeup. This skill ends with the user able to defend their design, not with an artifact. If they want to write the design down, that is doc-coach's job, and if an unvalidated assumption is worth testing with an experiment, that is spike-coach's (both from this marketplace; they can be installed if the user doesn't have them). The decision list from this session is doc-coach's raw material.
 
 ## Rules
 
